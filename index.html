@@ -1,0 +1,4699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11110F">
+  <title>Arvia Interiors | Luxury Interior Design & Turnkey Solutions in Ahmedabad</title>
+  <meta name="description" content="Arvia Interiors creates refined residential, commercial and turnkey interiors in Ahmedabad, combining thoughtful design with precise execution.">
+  <meta name="keywords" content="Interior Design Ahmedabad, Turnkey Interior Contractor Gujarat, Luxury Home Interiors, Modular Kitchen Ahmedabad, Commercial Interiors SG Highway">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Arvia Interiors | Luxury Interior Design & Turnkey Solutions in Ahmedabad">
+  <meta property="og:description" content="Spaces That Feel Like You. Refined residential, commercial and turnkey interiors in Ahmedabad, Gujarat.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80">
+  
+  <!-- Favicon (Inline SVG Data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2311110F'/><path d='M30 75 L50 25 L70 75 Z' stroke='%23B89452' stroke-width='6' fill='none'/><line x1='37' y1='58' x2='63' y2='58' stroke='%23B89452' stroke-width='6'/></svg>">
+  
+  <!-- Canonical Placeholder -->
+  <link rel="canonical" href="https://arviainteriors.com">
+
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       01. VARIABLES & DESIGN TOKENS
+       ========================================================================== */
+    :root {
+      /* Brand Palette */
+      --charcoal: #11110F;
+      --charcoal-surface: #181816;
+      --charcoal-elevated: #22221F;
+      --warm-ivory: #F5F1E8;
+      --ivory-surface: #EDE7DC;
+      --soft-beige: #D8CBB8;
+      --muted-gold: #B89452;
+      --muted-gold-hover: #D4AF67;
+      --muted-gold-subtle: rgba(184, 148, 82, 0.15);
+      --white: #FFFFFF;
+      --soft-gray: #8C8A84;
+      --charcoal-subtle: rgba(17, 17, 15, 0.08);
+      --border-dark: rgba(216, 203, 184, 0.14);
+      --border-light: rgba(17, 17, 15, 0.12);
+      --error-red: #D9534F;
+      --success-green: #4E8A63;
+
+      /* Typography */
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+      /* Transitions */
+      --transition-fast: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --transition-base: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-slow: 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+
+      /* Layout */
+      --max-width: 1360px;
+      --nav-height: 84px;
+      --gutter: clamp(1.25rem, 4vw, 3.5rem);
+    }
+
+    /* ==========================================================================
+       02. RESET & BASE
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-text-size-adjust: 100%;
+      background-color: var(--charcoal);
+      color: var(--warm-ivory);
+    }
+
+    body {
+      font-family: var(--font-sans);
+      font-weight: 400;
+      line-height: 1.65;
+      background-color: var(--charcoal);
+      color: var(--warm-ivory);
+      overflow-x: hidden;
+      position: relative;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body.scroll-locked {
+      overflow: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+
+    button {
+      background: none;
+      border: none;
+      font-family: inherit;
+      color: inherit;
+      cursor: pointer;
+      font-size: inherit;
+    }
+
+    input, select, textarea {
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    /* Skip link for accessibility */
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 1rem;
+      background: var(--muted-gold);
+      color: var(--charcoal);
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      z-index: 10000;
+      transition: top var(--transition-fast);
+      border-radius: 2px;
+    }
+    .skip-link:focus {
+      top: 1rem;
+    }
+
+    /* ==========================================================================
+       03. TYPOGRAPHY & UTILITIES
+       ========================================================================== */
+    .font-serif {
+      font-family: var(--font-serif);
+    }
+
+    .font-sans {
+      font-family: var(--font-sans);
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: var(--gutter);
+      padding-right: var(--gutter);
+    }
+
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: var(--font-sans);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted-gold);
+      margin-bottom: 1.25rem;
+    }
+
+    .section-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 1px;
+      background: var(--muted-gold);
+    }
+
+    .heading-large {
+      font-family: var(--font-serif);
+      font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.015em;
+    }
+
+    .heading-medium {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 3.8vw, 3rem);
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    .heading-small {
+      font-family: var(--font-serif);
+      font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+    .text-muted {
+      color: var(--soft-gray);
+    }
+
+    .lead-paragraph {
+      font-size: clamp(1.05rem, 1.35vw, 1.25rem);
+      line-height: 1.8;
+      color: var(--soft-beige);
+      font-weight: 300;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.85rem;
+      padding: 0.95rem 2rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border-radius: 1px;
+      position: relative;
+      overflow: hidden;
+      transition: all var(--transition-base);
+      cursor: pointer;
+    }
+
+    .btn-gold {
+      background: var(--muted-gold);
+      color: var(--charcoal);
+      border: 1px solid var(--muted-gold);
+      font-weight: 600;
+    }
+
+    .btn-gold::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--white);
+      opacity: 0;
+      transition: opacity var(--transition-fast);
+    }
+
+    .btn-gold:hover {
+      background: var(--muted-gold-hover);
+      border-color: var(--muted-gold-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(184, 148, 82, 0.25);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--warm-ivory);
+      border: 1px solid rgba(245, 241, 232, 0.4);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--muted-gold);
+      color: var(--muted-gold);
+      background: rgba(184, 148, 82, 0.08);
+      transform: translateY(-2px);
+    }
+
+    .btn-arrow svg {
+      width: 14px;
+      height: 14px;
+      transition: transform var(--transition-base);
+    }
+
+    .btn:hover .btn-arrow svg {
+      transform: translateX(4px);
+    }
+
+    /* Interactive Gold Underline Link */
+    .gold-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted-gold);
+      position: relative;
+      padding-bottom: 4px;
+    }
+
+    .gold-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: var(--muted-gold);
+      transform-origin: right;
+      transform: scaleX(0.4);
+      transition: transform var(--transition-base);
+    }
+
+    .gold-link:hover::after {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+
+    .gold-link svg {
+      width: 12px;
+      height: 12px;
+      transition: transform var(--transition-base);
+    }
+
+    .gold-link:hover svg {
+      transform: translateX(4px);
+    }
+
+    /* ==========================================================================
+       04. PAGE LOADER & PROGRESS BAR
+       ========================================================================== */
+    #page-loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: var(--charcoal);
+      z-index: 99999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.65s ease;
+    }
+
+    #page-loader.loaded {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .loader-brand {
+      font-family: var(--font-serif);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      letter-spacing: 0.25em;
+      color: var(--warm-ivory);
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .loader-line-wrap {
+      width: 160px;
+      height: 1px;
+      background: rgba(245, 241, 232, 0.15);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .loader-line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0%;
+      background: var(--muted-gold);
+      animation: loadProgress 1.1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+
+    @keyframes loadProgress {
+      0% { width: 0%; transform: translateX(0); }
+      50% { width: 70%; }
+      100% { width: 100%; }
+    }
+
+    .loader-subtext {
+      font-size: 0.6875rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--soft-gray);
+      margin-top: 1.25rem;
+    }
+
+    /* Scroll Progress Bar */
+    #scroll-progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 2.5px;
+      background: var(--muted-gold);
+      width: 0%;
+      z-index: 10001;
+      transition: width 0.1s linear;
+      box-shadow: 0 0 8px rgba(184, 148, 82, 0.6);
+    }
+
+    /* Custom Cursor (Desktop Only) */
+    .custom-cursor-dot,
+    .custom-cursor-ring {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 99990;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.3s ease, transform 0.15s ease-out;
+      opacity: 0;
+    }
+
+    .custom-cursor-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--muted-gold);
+    }
+
+    .custom-cursor-ring {
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(184, 148, 82, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.625rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--charcoal);
+      transition: width 0.25s ease, height 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+    }
+
+    .custom-cursor-ring.cursor-hover {
+      width: 58px;
+      height: 58px;
+      border-color: var(--muted-gold);
+      background: rgba(184, 148, 82, 0.1);
+    }
+
+    .custom-cursor-ring.cursor-view {
+      width: 72px;
+      height: 72px;
+      background: var(--muted-gold);
+      border-color: var(--muted-gold);
+      color: var(--charcoal);
+    }
+
+    @media (pointer: coarse) {
+      .custom-cursor-dot, .custom-cursor-ring {
+        display: none !important;
+      }
+    }
+
+    /* ==========================================================================
+       05. NAVBAR
+       ========================================================================== */
+    .header-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--nav-height);
+      z-index: 9000;
+      transition: background-color var(--transition-base), backdrop-filter var(--transition-base), border-color var(--transition-base), height var(--transition-base);
+      border-bottom: 1px solid transparent;
+    }
+
+    .header-nav.scrolled {
+      background-color: rgba(17, 17, 15, 0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-dark);
+      height: 74px;
+    }
+
+    .navbar-container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Logo */
+    .brand-logo {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      position: relative;
+      z-index: 9500;
+    }
+
+    .logo-main {
+      font-family: var(--font-serif);
+      font-size: 1.65rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      color: var(--warm-ivory);
+      line-height: 1;
+      transition: color var(--transition-fast);
+    }
+
+    .logo-sub {
+      font-family: var(--font-sans);
+      font-size: 0.58rem;
+      letter-spacing: 0.42em;
+      color: var(--muted-gold);
+      text-transform: uppercase;
+      margin-top: 3px;
+      font-weight: 600;
+    }
+
+    .brand-logo:hover .logo-main {
+      color: var(--muted-gold);
+    }
+
+    /* Desktop Nav Links */
+    .nav-menu-desktop {
+      display: flex;
+      align-items: center;
+      gap: clamp(1.5rem, 2.5vw, 2.75rem);
+    }
+
+    .nav-link {
+      font-size: 0.8125rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--warm-ivory);
+      position: relative;
+      padding: 0.5rem 0;
+      opacity: 0.85;
+      transition: opacity var(--transition-fast), color var(--transition-fast);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: var(--muted-gold);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform var(--transition-base);
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      opacity: 1;
+      color: var(--muted-gold);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .nav-cta-btn {
+      padding: 0.65rem 1.4rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+    }
+
+    /* Mobile Hamburger */
+    .mobile-menu-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      width: 44px;
+      height: 44px;
+      gap: 6px;
+      z-index: 9500;
+      padding: 8px;
+    }
+
+    .mobile-menu-toggle span {
+      display: block;
+      height: 1.5px;
+      background: var(--warm-ivory);
+      transition: all var(--transition-base);
+    }
+
+    .mobile-menu-toggle span:nth-child(1) { width: 26px; }
+    .mobile-menu-toggle span:nth-child(2) { width: 18px; }
+    .mobile-menu-toggle span:nth-child(3) { width: 22px; }
+
+    .mobile-menu-toggle.is-active span:nth-child(1) {
+      transform: translateY(7.5px) rotate(45deg);
+      width: 24px;
+    }
+    .mobile-menu-toggle.is-active span:nth-child(2) {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+    .mobile-menu-toggle.is-active span:nth-child(3) {
+      transform: translateY(-7.5px) rotate(-45deg);
+      width: 24px;
+    }
+
+    /* Mobile Navigation Fullscreen Modal */
+    .mobile-nav-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #0E0E0C;
+      z-index: 9200;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: calc(var(--nav-height) + 1.5rem) var(--gutter) 2.5rem;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-20px);
+      transition: opacity var(--transition-base), visibility var(--transition-base), transform var(--transition-base);
+      overflow-y: auto;
+    }
+
+    .mobile-nav-overlay.is-open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .mobile-nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+
+    .mobile-nav-item {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 7vw, 3rem);
+      font-weight: 400;
+      color: var(--warm-ivory);
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      transition: color var(--transition-fast), transform var(--transition-fast);
+    }
+
+    .mobile-nav-item span.index {
+      font-family: var(--font-sans);
+      font-size: 0.8125rem;
+      color: var(--muted-gold);
+      letter-spacing: 0.15em;
+    }
+
+    .mobile-nav-item:hover,
+    .mobile-nav-item:active {
+      color: var(--muted-gold);
+      transform: translateX(8px);
+    }
+
+    .mobile-nav-footer {
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-dark);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .mobile-nav-contact-item {
+      font-size: 0.875rem;
+      color: var(--soft-gray);
+    }
+
+    .mobile-nav-contact-item strong {
+      color: var(--warm-ivory);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    /* ==========================================================================
+       06. HERO SECTION
+       ========================================================================== */
+    .hero-section {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: var(--nav-height);
+      padding-bottom: 4rem;
+      overflow: hidden;
+      background-color: var(--charcoal);
+    }
+
+    .hero-media-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .hero-bg-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.04);
+      animation: kenBurnsZoom 22s infinite alternate ease-in-out;
+      filter: brightness(0.62) contrast(1.08);
+    }
+
+    @keyframes kenBurnsZoom {
+      0% { transform: scale(1.04) translate(0, 0); }
+      100% { transform: scale(1.14) translate(-1%, -1%); }
+    }
+
+    .hero-overlay-gradient {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        180deg,
+        rgba(17, 17, 15, 0.75) 0%,
+        rgba(17, 17, 15, 0.35) 45%,
+        rgba(17, 17, 15, 0.85) 90%,
+        var(--charcoal) 100%
+      );
+      z-index: 2;
+    }
+
+    .hero-side-label {
+      position: absolute;
+      left: clamp(1rem, 2.5vw, 2.5rem);
+      bottom: 6rem;
+      z-index: 4;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 0.6875rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: rgba(245, 241, 232, 0.5);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .hero-side-label::after {
+      content: '';
+      display: inline-block;
+      width: 40px;
+      height: 1px;
+      background: var(--muted-gold);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      max-width: 880px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--muted-gold);
+      margin-bottom: 1.5rem;
+      border-left: 2px solid var(--muted-gold);
+      padding-left: 0.85rem;
+      animation: fadeUp 1s ease forwards;
+    }
+
+    .hero-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(3.2rem, 7.5vw, 6.2rem);
+      font-weight: 300;
+      line-height: 1.02;
+      color: var(--warm-ivory);
+      margin-bottom: 1.75rem;
+      letter-spacing: -0.02em;
+      animation: fadeUp 1.2s ease forwards;
+    }
+
+    .hero-headline span.italic {
+      font-style: italic;
+      font-weight: 400;
+      color: #EFE4D2;
+    }
+
+    .hero-description {
+      font-size: clamp(1.05rem, 1.4vw, 1.3rem);
+      color: var(--soft-beige);
+      max-width: 620px;
+      line-height: 1.75;
+      font-weight: 300;
+      margin-bottom: 2.75rem;
+      animation: fadeUp 1.4s ease forwards;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.25rem;
+      animation: fadeUp 1.6s ease forwards;
+    }
+
+    .hero-scroll-indicator {
+      position: absolute;
+      bottom: 2.25rem;
+      right: clamp(1.25rem, 4vw, 3.5rem);
+      z-index: 4;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.6875rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--soft-gray);
+      transition: color var(--transition-fast);
+    }
+
+    .hero-scroll-indicator:hover {
+      color: var(--muted-gold);
+    }
+
+    .hero-scroll-indicator svg {
+      width: 14px;
+      height: 14px;
+      animation: bounceSlow 2.2s infinite ease-in-out;
+    }
+
+    @keyframes bounceSlow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(5px); }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ==========================================================================
+       07. SECTION 02 — INTRODUCTION (EDITORIAL SPLIT)
+       ========================================================================== */
+    .section-intro {
+      background-color: var(--warm-ivory);
+      color: var(--charcoal);
+      padding: clamp(5rem, 8vw, 8.5rem) 0;
+      position: relative;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: clamp(2.5rem, 5vw, 5rem);
+      align-items: start;
+    }
+
+    @media (min-width: 992px) {
+      .intro-grid {
+        grid-template-columns: 1.1fr 1fr;
+      }
+    }
+
+    .intro-left {
+      position: relative;
+    }
+
+    .intro-left .heading-large {
+      color: var(--charcoal);
+      margin-bottom: 2rem;
+    }
+
+    .intro-image-card {
+      margin-top: 2rem;
+      position: relative;
+      overflow: hidden;
+      border-radius: 2px;
+      box-shadow: 0 20px 40px rgba(17, 17, 15, 0.08);
+    }
+
+    .intro-image-card img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      transition: transform var(--transition-slow);
+    }
+
+    .intro-image-card:hover img {
+      transform: scale(1.03);
+    }
+
+    .intro-right {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .intro-body-text {
+      font-size: clamp(1.05rem, 1.25vw, 1.25rem);
+      line-height: 1.85;
+      color: #383834;
+      font-weight: 300;
+    }
+
+    .intro-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 1.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-number {
+      font-family: var(--font-serif);
+      font-size: clamp(2.5rem, 4.5vw, 3.8rem);
+      font-weight: 400;
+      color: var(--charcoal);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-number span.suffix {
+      color: var(--muted-gold);
+      font-size: 0.75em;
+    }
+
+    .stat-label {
+      font-size: 0.8125rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--soft-gray);
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .demo-disclaimer-tag {
+      display: inline-block;
+      font-size: 0.6875rem;
+      letter-spacing: 0.08em;
+      color: var(--soft-gray);
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+
+    /* ==========================================================================
+       08. SECTION 03 — FEATURED PROJECTS (CAROUSEL)
+       ========================================================================== */
+    .section-projects {
+      background-color: var(--charcoal);
+      color: var(--warm-ivory);
+      padding: clamp(5rem, 8vw, 8.5rem) 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .projects-header-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-bottom: clamp(2.5rem, 4vw, 4rem);
+    }
+
+    @media (min-width: 768px) {
+      .projects-header-wrap {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+    }
+
+    .projects-controls {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .carousel-nav-btn {
+      width: 48px;
+      height: 48px;
+      border: 1px solid var(--border-dark);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--warm-ivory);
+      transition: all var(--transition-fast);
+      border-radius: 1px;
+    }
+
+    .carousel-nav-btn:hover {
+      border-color: var(--muted-gold);
+      color: var(--muted-gold);
+      background: rgba(184, 148, 82, 0.08);
+      transform: scale(1.05);
+    }
+
+    .carousel-nav-btn:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+
+    .carousel-nav-btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .carousel-counter {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      letter-spacing: 0.1em;
+      color: var(--soft-beige);
+      margin-left: 0.5rem;
+    }
+
+    .carousel-counter .current-num {
+      color: var(--muted-gold);
+      font-weight: 600;
+    }
+
+    /* Carousel Outer & Track */
+    .projects-carousel-container {
+      position: relative;
+      cursor: grab;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .projects-carousel-container:active {
+      cursor: grabbing;
+    }
+
+    .projects-track {
+      display: flex;
+      gap: clamp(1.25rem, 2.5vw, 2.25rem);
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE */
+      padding-bottom: 2rem;
+      padding-top: 0.5rem;
+      margin-left: calc(-1 * var(--gutter));
+      margin-right: calc(-1 * var(--gutter));
+      padding-left: var(--gutter);
+      padding-right: var(--gutter);
+    }
+
+    .projects-track::-webkit-scrollbar {
+      display: none; /* Chrome, Safari */
+    }
+
+    .project-card {
+      flex: 0 0 clamp(290px, 42vw, 460px);
+      position: relative;
+      background: var(--charcoal-surface);
+      border: 1px solid var(--border-dark);
+      transition: transform var(--transition-base), border-color var(--transition-base);
+      display: flex;
+      flex-direction: column;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .project-card:hover {
+      border-color: rgba(184, 148, 82, 0.45);
+      transform: translateY(-4px);
+    }
+
+    .project-media-wrap {
+      position: relative;
+      width: 100%;
+      height: clamp(340px, 42vw, 460px);
+      overflow: hidden;
+      background: #1c1c1a;
+    }
+
+    .project-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--transition-slow), filter var(--transition-base);
+    }
+
+    .project-card:hover .project-img {
+      transform: scale(1.06);
+    }
+
+    .project-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        180deg,
+        rgba(17, 17, 15, 0.1) 0%,
+        rgba(17, 17, 15, 0.4) 60%,
+        rgba(17, 17, 15, 0.88) 100%
+      );
+      transition: background var(--transition-base);
+    }
+
+    .project-card:hover .project-overlay {
+      background: linear-gradient(
+        180deg,
+        rgba(17, 17, 15, 0.2) 0%,
+        rgba(17, 17, 15, 0.6) 50%,
+        rgba(17, 17, 15, 0.95) 100%
+      );
+    }
+
+    .project-year-badge {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: var(--warm-ivory);
+      background: rgba(17, 17, 15, 0.7);
+      backdrop-filter: blur(6px);
+      padding: 0.25rem 0.65rem;
+      border: 1px solid var(--border-dark);
+      border-radius: 1px;
+    }
+
+    .project-details {
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      background: var(--charcoal-surface);
+      position: relative;
+      z-index: 2;
+    }
+
+    .project-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted-gold);
+      font-weight: 600;
+    }
+
+    .project-location {
+      color: var(--soft-gray);
+    }
+
+    .project-title {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      font-weight: 400;
+      line-height: 1.2;
+      color: var(--warm-ivory);
+      transition: transform var(--transition-base), color var(--transition-fast);
+    }
+
+    .project-card:hover .project-title {
+      color: var(--muted-gold-hover);
+      transform: translateY(-2px);
+    }
+
+    .project-action-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-dark);
+    }
+
+    .view-project-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--warm-ivory);
+      transition: color var(--transition-fast);
+    }
+
+    .view-project-btn svg {
+      width: 14px;
+      height: 14px;
+      transition: transform var(--transition-base);
+    }
+
+    .project-card:hover .view-project-btn {
+      color: var(--muted-gold);
+    }
+
+    .project-card:hover .view-project-btn svg {
+      transform: translateX(5px);
+    }
+
+    /* Carousel progress line */
+    .carousel-progress-track {
+      width: 100%;
+      height: 2px;
+      background: var(--charcoal-elevated);
+      margin-top: 1.5rem;
+      position: relative;
+    }
+
+    .carousel-progress-fill {
+      height: 100%;
+      width: 16.66%;
+      background: var(--muted-gold);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: left var(--transition-base), width var(--transition-base);
+    }
+
+    /* ==========================================================================
+       09. SECTION 04 — SERVICES (WHAT WE CREATE)
+       ========================================================================== */
+    .section-services {
+      background-color: var(--charcoal-surface);
+      color: var(--warm-ivory);
+      padding: clamp(5rem, 8vw, 8.5rem) 0;
+      position: relative;
+      border-top: 1px solid var(--border-dark);
+      border-bottom: 1px solid var(--border-dark);
+    }
+
+    .services-header {
+      margin-bottom: clamp(2.5rem, 4vw, 4.5rem);
+      max-width: 680px;
+    }
+
+    .services-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-item {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: clamp(1rem, 3vw, 2.5rem);
+      padding: clamp(1.75rem, 3vw, 2.75rem) 0;
+      border-bottom: 1px solid var(--border-dark);
+      position: relative;
+      cursor: pointer;
+      transition: background-color var(--transition-fast), padding-left var(--transition-base);
+    }
+
+    .service-item:first-child {
+      border-top: 1px solid var(--border-dark);
+    }
+
+    .service-item:hover {
+      padding-left: 1rem;
+      background: rgba(184, 148, 82, 0.03);
+    }
+
+    .service-num {
+      font-family: var(--font-serif);
+      font-size: clamp(1.25rem, 2vw, 1.75rem);
+      color: var(--muted-gold);
+      letter-spacing: 0.1em;
+      min-width: 48px;
+    }
+
+    .service-content-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    @media (min-width: 860px) {
+      .service-content-wrap {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+    }
+
+    .service-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.6rem, 2.5vw, 2.3rem);
+      font-weight: 400;
+      line-height: 1.2;
+      color: var(--warm-ivory);
+      transition: color var(--transition-fast);
+    }
+
+    .service-item:hover .service-title {
+      color: var(--muted-gold);
+    }
+
+    .service-desc {
+      font-size: 0.9375rem;
+      color: var(--soft-gray);
+      max-width: 420px;
+      line-height: 1.6;
+    }
+
+    .service-arrow {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border-dark);
+      border-radius: 50%;
+      color: var(--warm-ivory);
+      transition: all var(--transition-base);
+    }
+
+    .service-arrow svg {
+      width: 16px;
+      height: 16px;
+      transition: transform var(--transition-base);
+    }
+
+    .service-item:hover .service-arrow {
+      border-color: var(--muted-gold);
+      background: var(--muted-gold);
+      color: var(--charcoal);
+    }
+
+    .service-item:hover .service-arrow svg {
+      transform: translate(2px, -2px);
+    }
+
+    /* Service Image Hover Preview (Desktop) */
+    .service-floating-preview {
+      position: fixed;
+      pointer-events: none;
+      width: 290px;
+      height: 380px;
+      border-radius: 2px;
+      overflow: hidden;
+      z-index: 8500;
+      opacity: 0;
+      transform: scale(0.85) translate(-50%, -50%);
+      transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+      border: 1px solid rgba(184, 148, 82, 0.3);
+    }
+
+    .service-floating-preview.active {
+      opacity: 1;
+      transform: scale(1) translate(-50%, -50%);
+    }
+
+    .service-floating-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ==========================================================================
+       10. SECTION 05 — TURNKEY PROCESS (TIMELINE)
+       ========================================================================== */
+    .section-process {
+      background-color: var(--charcoal);
+      color: var(--warm-ivory);
+      padding: clamp(5rem, 8vw, 8.5rem) 0;
+      position: relative;
+    }
+
+    .process-header {
+      margin-bottom: clamp(3rem, 5vw, 5rem);
+      max-width: 680px;
+    }
+
+    .process-timeline-wrap {
+      position: relative;
+    }
+
+    /* Desktop Process Timeline */
+    @media (min-width: 1024px) {
+      .process-steps-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1.75rem;
+        position: relative;
+        z-index: 2;
+      }
+
+      .process-connecting-line {
+        position: absolute;
+        top: 28px;
+        left: 3%;
+        width: 94%;
+        height: 1.5px;
+        background: var(--border-dark);
+        z-index: 1;
+      }
+
+      .process-line-progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0%;
+        background: var(--muted-gold);
+        transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+    }
+
+    /* Mobile/Tablet Fallback */
+    @media (max-width: 1023px) {
+      .process-steps-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        position: relative;
+        padding-left: 2rem;
+      }
+
+      .process-connecting-line {
+        position: absolute;
+        top: 0;
+        left: 14px;
+        width: 1.5px;
+        height: 100%;
+        background: var(--border-dark);
+        z-index: 1;
+      }
+
+      .process-line-progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background: var(--muted-gold);
+        transition: height 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+    }
+
+    .process-step-card {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .step-marker-wrap {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .step-node {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--charcoal);
+      border: 1.5px solid var(--border-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: var(--warm-ivory);
+      transition: all var(--transition-base);
+    }
+
+    .process-step-card.is-active .step-node,
+    .process-step-card:hover .step-node {
+      border-color: var(--muted-gold);
+      background: var(--charcoal-surface);
+      color: var(--muted-gold);
+      box-shadow: 0 0 15px rgba(184, 148, 82, 0.25);
+    }
+
+    .step-title {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 500;
+      color: var(--warm-ivory);
+      margin-bottom: 0.65rem;
+    }
+
+    .step-desc {
+      font-size: 0.875rem;
+      color: var(--soft-gray);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       11. SECTION 06 — WHY ARVIA
+       ========================================================================== */
+    .section-why-us {
+      background-color: #0c0c0a;
+      color: var(--warm-ivory);
+      padding: clamp(5rem, 8vw, 8.5rem) 0;
+      position: relative;
+    }
+
+    .why-header {
+      text-align: center;
+      max-width: 780px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: clamp(3rem, 5vw, 5rem);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .why-card {
+      background: var(--charcoal-surface);
+      border: 1px solid var(--border-dark);
+      padding: clamp(2rem, 3.5vw, 2.75rem);
+      border-radius: 2px;
+      position: relative;
+      overflow: hidden;
+      transition: transform var(--transition-base), border-color var(--transition-base);
+    }
+
+    .why-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--muted-gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--transition-base);
+    }
+
+    .why-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(184, 148, 82, 0.35);
+    }
+
+    .why-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .why-num {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      color: var(--muted-gold);
+      line-height: 1;
+      margin-bottom: 1.25rem;
+      display: block;
+    }
+
+    .why-title {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--warm-ivory);
+      margin-bottom: 0.85rem;
+    }
+
+    .why-text {
+      font-size: 0.9375rem;
+      color: var(--soft-gray);
+      line-height: 1.65;
+    }
+
+    /* ==========================================================================
+       12. SECTION 07 — FULL-WIDTH IMAGE BREAK
+       ========================================================================== */
+    .section-image-break {
+      position: relative;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: var(--charcoal);
+    }
+
+    .image-break-media {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .image-break-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.48) contrast(1.1);
+      transform: scale(1.02);
+      transition: transform 0.8s ease;
+    }
+
+    .image-break-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(17,17,15,0.2) 0%, rgba(17,17,15,0.7) 100%);
+      z-index: 2;
+    }
+
+    .image-break-content {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      padding: 3rem var(--gutter);
+      max-width: 850px;
+    }
+
+    .image-break-quote {
+      font-family: var(--font-serif);
+      font-size: clamp(2.2rem, 5vw, 4.2rem);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--warm-ivory);
+      margin-bottom: 2rem;
+      letter-spacing: -0.01em;
+    }
+
+    .image-break-quote span.italic {
+      font-style: italic;
+      color: var(--muted-gold-hover);
+    }
+
+    /* ==========================================================================
+       13. SECTION 08 — TESTIMONIALS (CAROUSEL)
+       ========================================================================== */
+    .section-testimonials {
+      background-color: var(--warm-ivory);
+      color: var(--charcoal);
+      padding: clamp(5rem, 8vw, 8.5rem) 0;
+      position: relative;
+    }
+
+    .testimonials-wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+    }
+
+    .testimonial-slide {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .testimonial-slide.active {
+      display: block;
+      opacity: 1;
+    }
+
+    .quote-icon {
+      font-family: var(--font-serif);
+      font-size: 5rem;
+      line-height: 1;
+      color: var(--muted-gold);
+      margin-bottom: 0.5rem;
+      opacity: 0.6;
+    }
+
+    .testimonial-quote {
+      font-family: var(--font-serif);
+      font-size: clamp(1.4rem, 2.6vw, 2.15rem);
+      font-weight: 400;
+      line-height: 1.45;
+      color: var(--charcoal);
+      margin-bottom: 2.5rem;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      font-family: var(--font-sans);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 0.25rem;
+    }
+
+    .testimonial-project {
+      font-size: 0.8125rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted-gold);
+      font-weight: 600;
+    }
+
+    .testimonials-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .test-arrow-btn {
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--border-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--charcoal);
+      transition: all var(--transition-fast);
+    }
+
+    .test-arrow-btn:hover {
+      background: var(--charcoal);
+      color: var(--warm-ivory);
+      border-color: var(--charcoal);
+    }
+
+    .test-dots {
+      display: flex;
+      gap: 8px;
+    }
+
+    .test-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(17, 17, 15, 0.2);
+      transition: all var(--transition-fast);
+      cursor: pointer;
+    }
+
+    .test-dot.active {
+      width: 24px;
+      border-radius: 4px;
+      background: var(--muted-gold);
+    }
+
+    /* ==========================================================================
+       14. SECTION 09 — FAQ (ACCORDION)
+       ========================================================================== */
+    .section-faq {
+      background-color: var(--charcoal);
+      color: var(--warm-ivory);
+      padding: clamp(5rem, 8vw, 8.5rem) 0;
+      position: relative;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: clamp(2.5rem, 5vw, 4.5rem);
+    }
+
+    @media (min-width: 992px) {
+      .faq-grid {
+        grid-template-columns: 1fr 1.6fr;
+      }
+    }
+
+    .faq-intro-wrap {
+      position: sticky;
+      top: calc(var(--nav-height) + 2rem);
+    }
+
+    .accordion-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid var(--border-dark);
+    }
+
+    .accordion-item:first-child {
+      border-top: 1px solid var(--border-dark);
+    }
+
+    .accordion-trigger {
+      width: 100%;
+      text-align: left;
+      padding: 1.75rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      font-family: var(--font-serif);
+      font-size: clamp(1.2rem, 1.8vw, 1.55rem);
+      font-weight: 500;
+      color: var(--warm-ivory);
+      transition: color var(--transition-fast);
+    }
+
+    .accordion-trigger:hover,
+    .accordion-trigger[aria-expanded="true"] {
+      color: var(--muted-gold);
+    }
+
+    .accordion-icon {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .accordion-icon span {
+      position: absolute;
+      background: var(--muted-gold);
+      transition: transform var(--transition-base);
+    }
+
+    .accordion-icon .h-bar {
+      width: 16px;
+      height: 1.5px;
+    }
+
+    .accordion-icon .v-bar {
+      width: 1.5px;
+      height: 16px;
+    }
+
+    .accordion-trigger[aria-expanded="true"] .accordion-icon .v-bar {
+      transform: rotate(90deg);
+      opacity: 0;
+    }
+
+    .accordion-panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      opacity: 0;
+    }
+
+    .accordion-panel.is-open {
+      opacity: 1;
+    }
+
+    .accordion-panel-inner {
+      padding-bottom: 1.75rem;
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--soft-gray);
+    }
+
+    /* ==========================================================================
+       15. SECTION 10 — CONTACT / LEAD GENERATION
+       ========================================================================== */
+    .section-contact {
+      background-color: var(--charcoal-surface);
+      color: var(--warm-ivory);
+      padding: clamp(5rem, 8vw, 8.5rem) 0;
+      position: relative;
+      border-top: 1px solid var(--border-dark);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: clamp(3rem, 5vw, 5rem);
+    }
+
+    @media (min-width: 992px) {
+      .contact-grid {
+        grid-template-columns: 1fr 1.35fr;
+      }
+    }
+
+    .contact-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .contact-info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-dark);
+    }
+
+    .contact-info-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .contact-info-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--charcoal-elevated);
+      border: 1px solid var(--border-dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted-gold);
+      flex-shrink: 0;
+    }
+
+    .contact-info-icon svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .contact-info-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-info-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--soft-gray);
+      margin-bottom: 2px;
+    }
+
+    .contact-info-val {
+      font-size: 1rem;
+      color: var(--warm-ivory);
+      font-weight: 500;
+    }
+
+    .contact-info-val a:hover {
+      color: var(--muted-gold);
+    }
+
+    /* Form Container */
+    .lead-form-wrap {
+      background: var(--charcoal);
+      border: 1px solid var(--border-dark);
+      padding: clamp(2rem, 4vw, 3.5rem);
+      border-radius: 2px;
+      position: relative;
+    }
+
+    .form-row-2col {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .form-row-2col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .form-label {
+      font-size: 0.8125rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--soft-beige);
+      font-weight: 500;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form-label span.req {
+      color: var(--muted-gold);
+    }
+
+    .form-control {
+      width: 100%;
+      background: var(--charcoal-surface);
+      border: 1px solid var(--border-dark);
+      padding: 0.9rem 1.15rem;
+      color: var(--warm-ivory);
+      font-size: 0.95rem;
+      border-radius: 1px;
+      transition: all var(--transition-fast);
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--muted-gold);
+      box-shadow: 0 0 0 2px rgba(184, 148, 82, 0.2);
+      background: var(--charcoal-elevated);
+    }
+
+    select.form-control {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23B89452' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1.25rem center;
+      background-size: 10px;
+      padding-right: 2.75rem;
+      cursor: pointer;
+    }
+
+    select.form-control option {
+      background: var(--charcoal-surface);
+      color: var(--warm-ivory);
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    /* Validation Feedback */
+    .form-group.has-error .form-control {
+      border-color: var(--error-red);
+      background: rgba(217, 83, 79, 0.04);
+    }
+
+    .form-group.has-success .form-control {
+      border-color: rgba(78, 138, 99, 0.6);
+    }
+
+    .form-error-msg {
+      font-size: 0.75rem;
+      color: var(--error-red);
+      display: none;
+      margin-top: 0.35rem;
+    }
+
+    .form-group.has-error .form-error-msg {
+      display: block;
+    }
+
+    .form-submit-btn {
+      width: 100%;
+      padding: 1.15rem;
+      font-size: 0.875rem;
+      letter-spacing: 0.15em;
+      margin-top: 0.5rem;
+    }
+
+    /* Loading Spinner */
+    .btn-spinner {
+      display: none;
+      width: 16px;
+      height: 16px;
+      border: 2px solid rgba(17, 17, 15, 0.3);
+      border-top-color: var(--charcoal);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .form-submit-btn.is-loading .btn-text {
+      display: none;
+    }
+
+    .form-submit-btn.is-loading .btn-spinner {
+      display: inline-block;
+    }
+
+    /* Form Success Modal */
+    .form-modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(17, 17, 15, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 99990;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--gutter);
+      opacity: 0;
+      visibility: hidden;
+      transition: all var(--transition-base);
+    }
+
+    .form-modal-overlay.is-visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .form-modal-card {
+      background: var(--charcoal);
+      border: 1px solid var(--muted-gold);
+      padding: clamp(2.5rem, 5vw, 4rem);
+      max-width: 540px;
+      width: 100%;
+      text-align: center;
+      border-radius: 2px;
+      transform: scale(0.92);
+      transition: transform var(--transition-base);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+      position: relative;
+    }
+
+    .form-modal-overlay.is-visible .form-modal-card {
+      transform: scale(1);
+    }
+
+    .modal-check-icon {
+      width: 68px;
+      height: 68px;
+      background: rgba(184, 148, 82, 0.1);
+      border: 1px solid var(--muted-gold);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted-gold);
+      margin-bottom: 1.5rem;
+    }
+
+    .modal-check-icon svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    .modal-title {
+      font-family: var(--font-serif);
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      color: var(--warm-ivory);
+    }
+
+    .modal-message {
+      font-size: 1rem;
+      color: var(--soft-beige);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .modal-demo-note {
+      font-size: 0.75rem;
+      color: var(--soft-gray);
+      margin-top: 1.5rem;
+      font-style: italic;
+    }
+
+    /* ==========================================================================
+       16. FLOATING ACTIONS (WHATSAPP & CALL)
+       ========================================================================== */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 8000;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: #25D366;
+      color: #FFFFFF;
+      padding: 0.85rem 1.4rem;
+      border-radius: 50px;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.35);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      transition: all var(--transition-base);
+    }
+
+    .floating-whatsapp svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    .floating-whatsapp:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 15px 30px rgba(37, 211, 102, 0.45);
+      color: #FFFFFF;
+    }
+
+    /* Mobile Quick Call Bar */
+    .mobile-quick-actions {
+      display: none;
+      position: fixed;
+      bottom: 1.25rem;
+      left: 1.25rem;
+      z-index: 8000;
+    }
+
+    .floating-call-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--charcoal);
+      border: 1px solid var(--muted-gold);
+      color: var(--muted-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+
+    .floating-call-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (max-width: 640px) {
+      .floating-whatsapp {
+        bottom: 1.25rem;
+        right: 1.25rem;
+        padding: 0;
+        width: 48px;
+        height: 48px;
+        justify-content: center;
+        border-radius: 50%;
+      }
+
+      .floating-whatsapp span {
+        display: none;
+      }
+
+      .mobile-quick-actions {
+        display: block;
+      }
+    }
+
+    /* ==========================================================================
+       17. FOOTER
+       ========================================================================== */
+    .site-footer {
+      background-color: #0A0A09;
+      color: var(--warm-ivory);
+      padding: clamp(5rem, 8vw, 7rem) 0 2rem;
+      border-top: 1px solid var(--border-dark);
+      position: relative;
+    }
+
+    .footer-top-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3.5rem;
+      margin-bottom: 4rem;
+    }
+
+    @media (min-width: 768px) {
+      .footer-top-grid {
+        grid-template-columns: 1.8fr 1fr 1fr 1.4fr;
+      }
+    }
+
+    .footer-brand-col {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .footer-tagline {
+      font-size: 1rem;
+      color: var(--soft-gray);
+      max-width: 320px;
+      line-height: 1.7;
+    }
+
+    .footer-col-title {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted-gold);
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .footer-nav-link {
+      font-size: 0.875rem;
+      color: var(--soft-beige);
+      transition: color var(--transition-fast), transform var(--transition-fast);
+      display: inline-block;
+    }
+
+    .footer-nav-link:hover {
+      color: var(--muted-gold);
+      transform: translateX(4px);
+    }
+
+    .footer-contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      font-size: 0.875rem;
+      color: var(--soft-beige);
+    }
+
+    .footer-contact-details a:hover {
+      color: var(--muted-gold);
+    }
+
+    .footer-social-row {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+
+    .footer-social-icon {
+      width: 38px;
+      height: 38px;
+      border: 1px solid var(--border-dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--warm-ivory);
+      transition: all var(--transition-fast);
+    }
+
+    .footer-social-icon svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .footer-social-icon:hover {
+      border-color: var(--muted-gold);
+      color: var(--muted-gold);
+      background: rgba(184, 148, 82, 0.08);
+      transform: translateY(-2px);
+    }
+
+    .footer-bottom-bar {
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-dark);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--soft-gray);
+    }
+
+    @media (min-width: 640px) {
+      .footer-bottom-bar {
+        flex-direction: row;
+      }
+    }
+
+    .back-to-top-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--soft-beige);
+      transition: color var(--transition-fast);
+    }
+
+    .back-to-top-btn:hover {
+      color: var(--muted-gold);
+    }
+
+    .back-to-top-btn svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* ==========================================================================
+       18. PROJECT LIGHTBOX MODAL (BONUS LUXURY DETAIL)
+       ========================================================================== */
+    .project-modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(17, 17, 15, 0.94);
+      backdrop-filter: blur(12px);
+      z-index: 99995;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(1rem, 3vw, 2.5rem);
+      opacity: 0;
+      visibility: hidden;
+      transition: all var(--transition-base);
+    }
+
+    .project-modal-backdrop.is-open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .project-modal-dialog {
+      background: var(--charcoal);
+      border: 1px solid var(--border-dark);
+      max-width: 900px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      border-radius: 2px;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr;
+      box-shadow: 0 35px 70px rgba(0,0,0,0.7);
+    }
+
+    @media (min-width: 768px) {
+      .project-modal-dialog {
+        grid-template-columns: 1.1fr 1fr;
+      }
+    }
+
+    .project-modal-close-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 40px;
+      height: 40px;
+      background: var(--charcoal);
+      border: 1px solid var(--border-dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--warm-ivory);
+      z-index: 10;
+      transition: all var(--transition-fast);
+    }
+
+    .project-modal-close-btn:hover {
+      border-color: var(--muted-gold);
+      color: var(--muted-gold);
+    }
+
+    .modal-project-img-wrap {
+      height: 100%;
+      min-height: 320px;
+      background: #181816;
+    }
+
+    .modal-project-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .modal-project-body {
+      padding: clamp(2rem, 3.5vw, 3rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .modal-project-meta {
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted-gold);
+      font-weight: 600;
+    }
+
+    .modal-project-title {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      font-weight: 400;
+      color: var(--warm-ivory);
+      line-height: 1.2;
+    }
+
+    .modal-project-details-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      padding: 1.25rem 0;
+      border-top: 1px solid var(--border-dark);
+      border-bottom: 1px solid var(--border-dark);
+      font-size: 0.8125rem;
+    }
+
+    .modal-detail-item span.label {
+      color: var(--soft-gray);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .modal-detail-item span.val {
+      color: var(--warm-ivory);
+      font-weight: 500;
+    }
+
+    .modal-project-desc {
+      font-size: 0.9375rem;
+      color: var(--soft-beige);
+      line-height: 1.7;
+    }
+
+    /* ==========================================================================
+       19. SCROLL REVEAL ANIMATIONS
+       ========================================================================== */
+    .reveal-item {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal-item.is-revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Delay helpers */
+    .delay-100 { transition-delay: 0.1s; }
+    .delay-200 { transition-delay: 0.2s; }
+    .delay-300 { transition-delay: 0.3s; }
+    .delay-400 { transition-delay: 0.4s; }
+
+    /* ==========================================================================
+       20. ACCESSIBILITY & PREFERS-REDUCED-MOTION
+       ========================================================================== */
+    :focus-visible {
+      outline: 2px solid var(--muted-gold);
+      outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .hero-bg-img {
+        animation: none !important;
+      }
+      .custom-cursor-dot, .custom-cursor-ring {
+        display: none !important;
+      }
+      .reveal-item {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress-bar" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Page Loader -->
+  <div id="page-loader" aria-hidden="true">
+    <div class="loader-brand">ARVIA</div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-subtext">Spaces That Feel Like You</div>
+  </div>
+
+  <!-- ==========================================================================
+       NAVBAR
+       ========================================================================== -->
+  <header class="header-nav" id="main-header">
+    <div class="container navbar-container">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Arvia Interiors Homepage">
+        <span class="logo-main">ARVIA</span>
+        <span class="logo-sub">INTERIORS</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu-desktop" aria-label="Primary Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Side CTA & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-gold nav-cta-btn">Book Consultation</a>
+
+        <!-- Hamburger Toggle -->
+        <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Fullscreen Navigation -->
+  <div class="mobile-nav-overlay" id="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="#hero" class="mobile-nav-item"><span class="index">01</span> Home</a>
+      <a href="#about" class="mobile-nav-item"><span class="index">02</span> About</a>
+      <a href="#projects" class="mobile-nav-item"><span class="index">03</span> Projects</a>
+      <a href="#services" class="mobile-nav-item"><span class="index">04</span> Services</a>
+      <a href="#process" class="mobile-nav-item"><span class="index">05</span> Process</a>
+      <a href="#contact" class="mobile-nav-item"><span class="index">06</span> Contact</a>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <div class="mobile-nav-contact-item">
+        <strong>Ahmedabad Studio</strong>
+        SBR Iconic, Sindhu Bhavan Road, Bodakdev, Ahmedabad
+      </div>
+      <div class="mobile-nav-contact-item">
+        <strong>Call Us Directly</strong>
+        +91 90000 00000
+      </div>
+      <a href="#contact" class="btn btn-gold" style="width: 100%; margin-top: 0.5rem;" onclick="closeMobileMenu()">Book a Consultation</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-media-wrapper">
+        <img 
+          src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1920&q=85" 
+          alt="Luxury living room interior in Ahmedabad with bespoke architectural millwork and warm lighting"
+          class="hero-bg-img"
+          fetchpriority="high"
+        >
+        <div class="hero-overlay-gradient"></div>
+      </div>
+
+      <div class="hero-side-label" aria-hidden="true">
+        ARVIA / 01
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-badge">AHMEDABAD • INTERIOR DESIGN • TURNKEY</div>
+        <h1 class="hero-headline">
+          Spaces<br>
+          <span class="italic">That Feel</span><br>
+          Like You.
+        </h1>
+        <p class="hero-description">
+          Thoughtfully designed interiors, crafted around the way you live, work and experience space. Luxury residences & turnkey execution in Ahmedabad.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-gold btn-arrow">
+            Explore Our Work
+            <span class="btn-arrow" aria-hidden="true">
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M1 7h12M8 2l5 5-5 5"/>
+              </svg>
+            </span>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            Book a Consultation
+          </a>
+        </div>
+      </div>
+
+      <a href="#about" class="hero-scroll-indicator" aria-label="Scroll to introduction section">
+        <span>SCROLL TO EXPLORE</span>
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <path d="M7 1v12M2 8l5 5 5-5"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 02 — INTRODUCTION (EDITORIAL SPLIT)
+         ========================================================================== -->
+    <section class="section-intro" id="about">
+      <div class="container">
+        <div class="intro-grid">
+          
+          <!-- Left Column -->
+          <div class="intro-left reveal-item">
+            <span class="section-eyebrow">Studio Philosophy</span>
+            <h2 class="heading-large">
+              We design spaces with intention.
+            </h2>
+            <div class="intro-image-card">
+              <img 
+                src="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&w=1000&q=80" 
+                alt="Architectural materials, marble swatches, and interior moodboard layout"
+                loading="lazy"
+              >
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="intro-right reveal-item delay-200">
+            <p class="intro-body-text">
+              From concept to completion, we create refined interiors that balance architecture, functionality and emotion. Every detail is considered to make the space feel distinctly yours.
+            </p>
+            <p class="intro-body-text" style="color: #605E59; font-size: 1.05rem;">
+              Based in Ahmedabad, Arvia Interiors bridges the gap between visionary aesthetics and rigorous on-site execution. Our turnkey approach guarantees fixed budgets, transparent timelines, and craftsmanship that endures.
+            </p>
+
+            <!-- Demo Statistics -->
+            <div class="intro-stats-grid" id="stats-section">
+              <div class="stat-item">
+                <div class="stat-number">
+                  <span class="stat-counter" data-target="10">0</span><span class="suffix">+</span>
+                </div>
+                <div class="stat-label">Years of Design Experience</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">
+                  <span class="stat-counter" data-target="150">0</span><span class="suffix">+</span>
+                </div>
+                <div class="stat-label">Projects Crafted</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">
+                  <span class="stat-counter" data-target="100">0</span><span class="suffix">+</span>
+                </div>
+                <div class="stat-label">Happy Clients</div>
+              </div>
+            </div>
+            <div class="demo-disclaimer-tag">* Demo statistics presented for sales demonstration purposes.</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 03 — FEATURED PROJECTS (CAROUSEL)
+         ========================================================================== -->
+    <section class="section-projects" id="projects">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="projects-header-wrap reveal-item">
+          <div>
+            <span class="section-eyebrow">Portfolio</span>
+            <h2 class="heading-large">Selected Work</h2>
+            <p class="lead-paragraph" style="margin-top: 0.5rem;">
+              A collection of spaces designed to live beautifully.
+            </p>
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="projects-controls">
+            <button class="carousel-nav-btn" id="project-prev-btn" aria-label="Previous project">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+              </svg>
+            </button>
+            <button class="carousel-nav-btn" id="project-next-btn" aria-label="Next project">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+            <div class="carousel-counter" aria-live="polite">
+              <span class="current-num" id="current-slide-num">01</span> / 06
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Track Wrapper -->
+        <div class="projects-carousel-container" id="project-carousel" tabindex="0" role="region" aria-label="Selected Projects Carousel">
+          <div class="projects-track" id="project-track">
+            
+            <!-- Project 01 -->
+            <article class="project-card" data-project-id="1">
+              <div class="project-media-wrap" data-cursor="VIEW">
+                <img 
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" 
+                  alt="The Ahmedabad Residence - Luxury villa living space with travertine walls and bespoke seating"
+                  class="project-img"
+                  loading="lazy"
+                >
+                <div class="project-overlay"></div>
+                <div class="project-year-badge">2024</div>
+              </div>
+              <div class="project-details">
+                <div class="project-meta-line">
+                  <span>Residential Villa</span>
+                  <span class="project-location">Bodakdev, Ahmedabad</span>
+                </div>
+                <h3 class="project-title">The Ahmedabad Residence</h3>
+                <div class="project-action-row">
+                  <span class="view-project-btn">
+                    View Project Details
+                    <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M1 7h12M8 2l5 5-5 5"/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 02 -->
+            <article class="project-card" data-project-id="2">
+              <div class="project-media-wrap" data-cursor="VIEW">
+                <img 
+                  src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" 
+                  alt="The Urban Villa - Modernist architecture with open-plan interior design"
+                  class="project-img"
+                  loading="lazy"
+                >
+                <div class="project-overlay"></div>
+                <div class="project-year-badge">2024</div>
+              </div>
+              <div class="project-details">
+                <div class="project-meta-line">
+                  <span>Luxury Home</span>
+                  <span class="project-location">Sindhu Bhavan Rd, Ahmedabad</span>
+                </div>
+                <h3 class="project-title">The Urban Villa</h3>
+                <div class="project-action-row">
+                  <span class="view-project-btn">
+                    View Project Details
+                    <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M1 7h12M8 2l5 5-5 5"/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 03 -->
+            <article class="project-card" data-project-id="3">
+              <div class="project-media-wrap" data-cursor="VIEW">
+                <img 
+                  src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80" 
+                  alt="The Minimalist Apartment - Warm beige aesthetic with fluted woodwork"
+                  class="project-img"
+                  loading="lazy"
+                >
+                <div class="project-overlay"></div>
+                <div class="project-year-badge">2023</div>
+              </div>
+              <div class="project-details">
+                <div class="project-meta-line">
+                  <span>Modern Living</span>
+                  <span class="project-location">Ambli Road, Ahmedabad</span>
+                </div>
+                <h3 class="project-title">The Minimalist Apartment</h3>
+                <div class="project-action-row">
+                  <span class="view-project-btn">
+                    View Project Details
+                    <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M1 7h12M8 2l5 5-5 5"/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 04 -->
+            <article class="project-card" data-project-id="4">
+              <div class="project-media-wrap" data-cursor="VIEW">
+                <img 
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" 
+                  alt="The Executive Office - Premium corporate workspace with acoustic panels and warm lighting"
+                  class="project-img"
+                  loading="lazy"
+                >
+                <div class="project-overlay"></div>
+                <div class="project-year-badge">2024</div>
+              </div>
+              <div class="project-details">
+                <div class="project-meta-line">
+                  <span>Commercial Workspace</span>
+                  <span class="project-location">SG Highway, Ahmedabad</span>
+                </div>
+                <h3 class="project-title">The Executive Office</h3>
+                <div class="project-action-row">
+                  <span class="view-project-btn">
+                    View Project Details
+                    <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M1 7h12M8 2l5 5-5 5"/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 05 -->
+            <article class="project-card" data-project-id="5">
+              <div class="project-media-wrap" data-cursor="VIEW">
+                <img 
+                  src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80" 
+                  alt="The Heritage Residence - Traditional Gujarat craftsmanship fused with contemporary detailing"
+                  class="project-img"
+                  loading="lazy"
+                >
+                <div class="project-overlay"></div>
+                <div class="project-year-badge">2023</div>
+              </div>
+              <div class="project-details">
+                <div class="project-meta-line">
+                  <span>Courtyard Restoration</span>
+                  <span class="project-location">Usmanpura, Ahmedabad</span>
+                </div>
+                <h3 class="project-title">The Heritage Residence</h3>
+                <div class="project-action-row">
+                  <span class="view-project-btn">
+                    View Project Details
+                    <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M1 7h12M8 2l5 5-5 5"/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 06 -->
+            <article class="project-card" data-project-id="6">
+              <div class="project-media-wrap" data-cursor="VIEW">
+                <img 
+                  src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" 
+                  alt="The Modern Penthouse - High-ceilinged duplex living room overlooking Ahmedabad skyline"
+                  class="project-img"
+                  loading="lazy"
+                >
+                <div class="project-overlay"></div>
+                <div class="project-year-badge">2024</div>
+              </div>
+              <div class="project-details">
+                <div class="project-meta-line">
+                  <span>Sky Penthouse</span>
+                  <span class="project-location">Prahlad Nagar, Ahmedabad</span>
+                </div>
+                <h3 class="project-title">The Modern Penthouse</h3>
+                <div class="project-action-row">
+                  <span class="view-project-btn">
+                    View Project Details
+                    <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M1 7h12M8 2l5 5-5 5"/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Carousel Progress Line -->
+          <div class="carousel-progress-track">
+            <div class="carousel-progress-fill" id="carousel-progress-fill"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Floating Service Image Preview (Desktop Hover) -->
+    <div class="service-floating-preview" id="service-preview" aria-hidden="true">
+      <img src="" alt="" id="service-preview-img">
+    </div>
+
+    <!-- ==========================================================================
+         SECTION 04 — SERVICES (WHAT WE CREATE)
+         ========================================================================== */
+    -->
+    <section class="section-services" id="services">
+      <div class="container">
+        
+        <div class="services-header reveal-item">
+          <span class="section-eyebrow">Our Capabilities</span>
+          <h2 class="heading-large">What We Create</h2>
+          <p class="lead-paragraph" style="margin-top: 0.75rem;">
+            From private sanctuaries to progressive corporate environments, we deliver bespoke design and immaculate turnkey solutions.
+          </p>
+        </div>
+
+        <div class="services-list" id="services-list">
+          
+          <!-- 01 -->
+          <div class="service-item reveal-item" 
+               data-preview="https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=900&q=80"
+               data-title="Residential Interiors">
+            <span class="service-num">01</span>
+            <div class="service-content-wrap">
+              <h3 class="service-title">Residential Interiors</h3>
+              <p class="service-desc">
+                High-end apartments, penthouses, and sprawling villas designed with custom millwork, artisanal textures, and personal warmth.
+              </p>
+            </div>
+            <div class="service-arrow" aria-hidden="true">
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M2 12L12 2M12 2H4M12 2V10"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- 02 -->
+          <div class="service-item reveal-item delay-100" 
+               data-preview="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=900&q=80"
+               data-title="Commercial Interiors">
+            <span class="service-num">02</span>
+            <div class="service-content-wrap">
+              <h3 class="service-title">Commercial Interiors</h3>
+              <p class="service-desc">
+                Forward-thinking executive suites, corporate headquarters, and retail spaces engineered for brand presence and employee productivity.
+              </p>
+            </div>
+            <div class="service-arrow" aria-hidden="true">
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M2 12L12 2M12 2H4M12 2V10"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- 03 -->
+          <div class="service-item reveal-item delay-200" 
+               data-preview="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80"
+               data-title="Turnkey Projects">
+            <span class="service-num">03</span>
+            <div class="service-content-wrap">
+              <h3 class="service-title">Turnkey Projects</h3>
+              <p class="service-desc">
+                Complete responsibility from civil alterations and MEP to carpentry, painting, styling, and final handover under a single contract.
+              </p>
+            </div>
+            <div class="service-arrow" aria-hidden="true">
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M2 12L12 2M12 2H4M12 2V10"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="service-item reveal-item delay-300" 
+               data-preview="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=900&q=80"
+               data-title="Modular Kitchens">
+            <span class="service-num">04</span>
+            <div class="service-content-wrap">
+              <h3 class="service-title">Modular Kitchens</h3>
+              <p class="service-desc">
+                German and Italian hardware systems married to moisture-resistant finishes, quartz surfaces, and smart kitchen storage ergonomics.
+              </p>
+            </div>
+            <div class="service-arrow" aria-hidden="true">
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M2 12L12 2M12 2H4M12 2V10"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="service-item reveal-item delay-400" 
+               data-preview="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=900&q=80"
+               data-title="Custom Furniture">
+            <span class="service-num">05</span>
+            <div class="service-content-wrap">
+              <h3 class="service-title">Custom Furniture</h3>
+              <p class="service-desc">
+                Bespoke sofas, dining tables, consoles, and architectural lighting pieces handcrafted to exact proportions in our Ahmedabad workshop.
+              </p>
+            </div>
+            <div class="service-arrow" aria-hidden="true">
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M2 12L12 2M12 2H4M12 2V10"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="service-item reveal-item" 
+               data-preview="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=900&q=80"
+               data-title="3D Visualization">
+            <span class="service-num">06</span>
+            <div class="service-content-wrap">
+              <h3 class="service-title">3D Interior Visualization</h3>
+              <p class="service-desc">
+                Photorealistic lighting, material simulations, and virtual walk-throughs allowing you to experience your future home before construction begins.
+              </p>
+            </div>
+            <div class="service-arrow" aria-hidden="true">
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M2 12L12 2M12 2H4M12 2V10"/>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 05 — TURNKEY PROCESS (TIMELINE)
+         ========================================================================== -->
+    <section class="section-process" id="process">
+      <div class="container">
+        
+        <div class="process-header reveal-item">
+          <span class="section-eyebrow">Execution Roadmap</span>
+          <h2 class="heading-large">From Vision to Reality</h2>
+          <p class="lead-paragraph" style="margin-top: 0.75rem;">
+            A disciplined 6-stage turnkey journey ensuring absolute creative integrity and seamless execution.
+          </p>
+        </div>
+
+        <div class="process-timeline-wrap">
+          <!-- Animated Progress Line -->
+          <div class="process-connecting-line">
+            <div class="process-line-progress" id="process-progress-bar"></div>
+          </div>
+
+          <div class="process-steps-grid">
+            
+            <!-- Step 01 -->
+            <div class="process-step-card reveal-item">
+              <div class="step-marker-wrap">
+                <div class="step-node">01</div>
+              </div>
+              <h3 class="step-title">Consultation</h3>
+              <p class="step-desc">
+                In-depth discovery session assessing your lifestyle, architectural goals, budget boundaries, and timeline expectations.
+              </p>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="process-step-card reveal-item delay-100">
+              <div class="step-marker-wrap">
+                <div class="step-node">02</div>
+              </div>
+              <h3 class="step-title">Concept & Design</h3>
+              <p class="step-desc">
+                Spatial layouts, architectural flow analysis, mood boards, and thematic material curation tailored to your preferences.
+              </p>
+            </div>
+
+            <!-- Step 03 -->
+            <div class="process-step-card reveal-item delay-200">
+              <div class="step-marker-wrap">
+                <div class="step-node">03</div>
+              </div>
+              <h3 class="step-title">3D Visualization</h3>
+              <p class="step-desc">
+                Hyper-detailed 3D renders with exact lighting simulations, material finishes, and spatial perspectives.
+              </p>
+            </div>
+
+            <!-- Step 04 -->
+            <div class="process-step-card reveal-item delay-300">
+              <div class="step-marker-wrap">
+                <div class="step-node">04</div>
+              </div>
+              <h3 class="step-title">Material Selection</h3>
+              <p class="step-desc">
+                Hands-on tactile curation of stones, veneers, hardware, textiles, and fixtures with itemized BOQ sign-off.
+              </p>
+            </div>
+
+            <!-- Step 05 -->
+            <div class="process-step-card reveal-item delay-400">
+              <div class="step-marker-wrap">
+                <div class="step-node">05</div>
+              </div>
+              <h3 class="step-title">Execution</h3>
+              <p class="step-desc">
+                Rigorous on-site turnkey contracting with dedicated project managers, daily progress logs, and strict quality audits.
+              </p>
+            </div>
+
+            <!-- Step 06 -->
+            <div class="process-step-card reveal-item">
+              <div class="step-marker-wrap">
+                <div class="step-node">06</div>
+              </div>
+              <h3 class="step-title">Handover</h3>
+              <p class="step-desc">
+                Deep cleaning, styling, thorough snag-list clearance, and final key handover of a spotless, move-in ready home.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 06 — WHY ARVIA
+         ========================================================================== -->
+    <section class="section-why-us">
+      <div class="container">
+        
+        <div class="why-header reveal-item">
+          <span class="section-eyebrow">The Arvia Distinction</span>
+          <h2 class="heading-large">
+            Designed beautifully.<br>
+            Executed precisely.
+          </h2>
+          <p class="lead-paragraph" style="margin-top: 1rem;">
+            Why discerning homeowners and corporations across Ahmedabad entrust their flagship projects to our turnkey team.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          
+          <div class="why-card reveal-item">
+            <span class="why-num">01</span>
+            <h3 class="why-title">Personalized Design</h3>
+            <p class="why-text">
+              No generic catalog templates. Every layout, millwork detail, and furniture silhouette is crafted around your unique daily rituals and aesthetic sensibilities.
+            </p>
+          </div>
+
+          <div class="why-card reveal-item delay-100">
+            <span class="why-num">02</span>
+            <h3 class="why-title">End-to-End Execution</h3>
+            <p class="why-text">
+              A single point of accountability for civil demolition, electrical engineering, plumbing, bespoke carpentry, and styling. No fragmented coordination.
+            </p>
+          </div>
+
+          <div class="why-card reveal-item delay-200">
+            <span class="why-num">03</span>
+            <h3 class="why-title">Transparent Process</h3>
+            <p class="why-text">
+              Comprehensive Bill of Quantities (BOQ), milestone-based payment schedules, and weekly photographic reports. Zero hidden charges or unexpected price hikes.
+            </p>
+          </div>
+
+          <div class="why-card reveal-item delay-300">
+            <span class="why-num">04</span>
+            <h3 class="why-title">Attention to Detail</h3>
+            <p class="why-text">
+              Millimeter precision joinery, flush skirting details, concealed ambient lighting channels, and hand-selected natural stones sourced across India and Italy.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 07 — FULL-WIDTH IMAGE BREAK
+         ========================================================================== -->
+    <section class="section-image-break">
+      <div class="image-break-media">
+        <img 
+          src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=2000&q=85" 
+          alt="Atmospheric architectural living space with panoramic glass and minimalist luxury styling"
+          loading="lazy"
+        >
+      </div>
+      <div class="image-break-overlay"></div>
+      
+      <div class="image-break-content reveal-item">
+        <blockquote class="image-break-quote">
+          “Your space should <span class="italic">tell your story.</span>”
+        </blockquote>
+        <a href="#contact" class="gold-link">
+          START YOUR PROJECT
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M1 7h12M8 2l5 5-5 5"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 08 — TESTIMONIALS (CAROUSEL)
+         ========================================================================== -->
+    <section class="section-testimonials" id="testimonials">
+      <div class="container">
+        
+        <div class="testimonials-wrap">
+          <span class="section-eyebrow" style="justify-content: center;">Client Reflections</span>
+          <div class="quote-icon" aria-hidden="true">“</div>
+
+          <div id="testimonials-carousel" aria-live="polite">
+            
+            <!-- Testimonial 01 -->
+            <div class="testimonial-slide active" data-index="0">
+              <blockquote class="testimonial-quote">
+                “The entire process felt effortless. Every detail was thoughtfully handled and the final space exceeded what we imagined. Their turnkey execution meant we never had to worry about contractors or timelines.”
+              </blockquote>
+              <div class="testimonial-author">Aarav Shah</div>
+              <div class="testimonial-project">3BHK Residence — Bodakdev, Ahmedabad</div>
+            </div>
+
+            <!-- Testimonial 02 -->
+            <div class="testimonial-slide" data-index="1">
+              <blockquote class="testimonial-quote">
+                “Arvia transformed our corporate headquarters into an inspiring, high-performance workspace. The material quality, acoustical engineering, and detailing are unmatched in Gujarat.”
+              </blockquote>
+              <div class="testimonial-author">Meera Patel</div>
+              <div class="testimonial-project">Executive Tech Studio — SG Highway, Ahmedabad</div>
+            </div>
+
+            <!-- Testimonial 03 -->
+            <div class="testimonial-slide" data-index="2">
+              <blockquote class="testimonial-quote">
+                “From the initial 3D visualization to the final handover, the precision was astonishing. What we saw in the renders was exactly what was delivered in our living room.”
+              </blockquote>
+              <div class="testimonial-author">Harshvardhan Mehta</div>
+              <div class="testimonial-project">Luxury Villa — Ambli Road, Ahmedabad</div>
+            </div>
+
+          </div>
+
+          <div class="demo-disclaimer-tag" style="margin-top: 1.5rem;">
+            * Client feedback illustrated as demo placeholders for presentation.
+          </div>
+
+          <!-- Controls -->
+          <div class="testimonials-nav">
+            <button class="test-arrow-btn" id="test-prev-btn" aria-label="Previous testimonial">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+              </svg>
+            </button>
+            <div class="test-dots" id="test-dots-container">
+              <span class="test-dot active" data-slide="0" aria-label="Slide 1"></span>
+              <span class="test-dot" data-slide="1" aria-label="Slide 2"></span>
+              <span class="test-dot" data-slide="2" aria-label="Slide 3"></span>
+            </div>
+            <button class="test-arrow-btn" id="test-next-btn" aria-label="Next testimonial">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 09 — FAQ (ACCORDION)
+         ========================================================================== -->
+    <section class="section-faq" id="faq">
+      <div class="container">
+        
+        <div class="faq-grid">
+          
+          <!-- Left Header Column -->
+          <div class="faq-intro-wrap reveal-item">
+            <span class="section-eyebrow">Clear Answers</span>
+            <h2 class="heading-large">
+              Frequently<br>Asked Questions
+            </h2>
+            <p class="lead-paragraph" style="margin-top: 1rem;">
+              Everything you need to know about partnering with Arvia for your interior journey in Ahmedabad.
+            </p>
+            <div style="margin-top: 2rem;">
+              <a href="#contact" class="gold-link">
+                HAVE A SPECIFIC QUESTION? ASK US
+                <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M1 7h12M8 2l5 5-5 5"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Accordion Column -->
+          <div class="accordion-list reveal-item delay-200" id="faq-accordion">
+            
+            <!-- Item 1 -->
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-1" id="faq-btn-1">
+                <span>01. How does the interior design process work?</span>
+                <div class="accordion-icon" aria-hidden="true">
+                  <span class="h-bar"></span>
+                  <span class="v-bar"></span>
+                </div>
+              </button>
+              <div class="accordion-panel" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1">
+                <div class="accordion-panel-inner">
+                  Our process begins with an in-depth consultation to understand your requirements, taste, and lifestyle. We then develop 2D space-planning layouts, 3D photorealistic visualizations, and detailed material palettes. Once the design is locked and the BOQ approved, our turnkey team commences execution with weekly milestone reports until final styling and handover.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-2" id="faq-btn-2">
+                <span>02. Do you provide complete turnkey execution?</span>
+                <div class="accordion-icon" aria-hidden="true">
+                  <span class="h-bar"></span>
+                  <span class="v-bar"></span>
+                </div>
+              </button>
+              <div class="accordion-panel" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2">
+                <div class="accordion-panel-inner">
+                  Yes, turnkey contracting is our core specialty. We handle everything end-to-end: civil modifications, electrical conduit routing, plumbing, custom carpentry, false ceilings, flooring, bespoke furniture fabrication, lighting installation, and soft furnishings. You work with a single dedicated project manager.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-3" id="faq-btn-3">
+                <span>03. How long does an interior project take?</span>
+                <div class="accordion-icon" aria-hidden="true">
+                  <span class="h-bar"></span>
+                  <span class="v-bar"></span>
+                </div>
+              </button>
+              <div class="accordion-panel" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3">
+                <div class="accordion-panel-inner">
+                  Timelines depend on project scale and structural scope. Typically, a premium 3BHK or 4BHK apartment in Ahmedabad takes approximately 75 to 110 working days from design sign-off. Large-scale luxury villas and commercial offices take between 4 to 7 months. We commit to a contractual timeline with clearly defined phase milestones.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-4" id="faq-btn-4">
+                <span>04. Do you provide 3D visualizations?</span>
+                <div class="accordion-icon" aria-hidden="true">
+                  <span class="h-bar"></span>
+                  <span class="v-bar"></span>
+                </div>
+              </button>
+              <div class="accordion-panel" id="faq-panel-4" role="region" aria-labelledby="faq-btn-4">
+                <div class="accordion-panel-inner">
+                  Absolutely. Every project includes photorealistic 3D renders of all key spaces—living rooms, master suites, modular kitchens, and bathrooms. We model the exact lighting fixtures, natural stone grains, paint swatches, and bespoke furniture finishes so there is zero ambiguity before execution begins.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-5" id="faq-btn-5">
+                <span>05. Can you work with an existing architect?</span>
+                <div class="accordion-icon" aria-hidden="true">
+                  <span class="h-bar"></span>
+                  <span class="v-bar"></span>
+                </div>
+              </button>
+              <div class="accordion-panel" id="faq-panel-5" role="region" aria-labelledby="faq-btn-5">
+                <div class="accordion-panel-inner">
+                  Yes, we frequently collaborate with external architects, structural engineers, and developers. Whether your architect requires execution partners to bring their vision to reality or needs us to lead the interior architectural detailing, our turnkey team integrates seamlessly.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-6" id="faq-btn-6">
+                <span>06. How can I start my project?</span>
+                <div class="accordion-icon" aria-hidden="true">
+                  <span class="h-bar"></span>
+                  <span class="v-bar"></span>
+                </div>
+              </button>
+              <div class="accordion-panel" id="faq-panel-6" role="region" aria-labelledby="faq-btn-6">
+                <div class="accordion-panel-inner">
+                  Starting is straightforward: submit the consultation request form below, send a message via our WhatsApp button, or phone our Ahmedabad studio directly. We will schedule an initial site visit or studio consultation to review your floor plans and discuss ideas.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 10 — CONTACT / LEAD GENERATION FORM
+         ========================================================================== -->
+    <section class="section-contact" id="contact">
+      <div class="container">
+        
+        <div class="contact-grid">
+          
+          <!-- Contact Left: Studio & Details -->
+          <div class="contact-sidebar reveal-item">
+            <div>
+              <span class="section-eyebrow">Start A Conversation</span>
+              <h2 class="heading-large">
+                Let's Create<br>Something<br>Beautiful.
+              </h2>
+              <p class="lead-paragraph" style="margin-top: 1rem;">
+                Tell us a little about your project, your timeline, and your aspirations. Our principal designers will get back to you within 24 hours.
+              </p>
+            </div>
+
+            <div class="contact-info-list">
+              
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="contact-info-text">
+                  <span class="contact-info-label">Studio Address</span>
+                  <span class="contact-info-val">SBR Iconic, Sindhu Bhavan Road, Bodakdev, Ahmedabad, Gujarat 380054</span>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div class="contact-info-text">
+                  <span class="contact-info-label">Telephone</span>
+                  <span class="contact-info-val"><a href="tel:+919000000000">+91 90000 00000</a></span>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div class="contact-info-text">
+                  <span class="contact-info-label">Email Enquiries</span>
+                  <span class="contact-info-val"><a href="mailto:hello@arviainteriors.com">hello@arviainteriors.com</a></span>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                <div class="contact-info-text">
+                  <span class="contact-info-label">Working Hours</span>
+                  <span class="contact-info-val">Monday – Saturday: 10:00 AM – 7:30 PM</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Contact Right: Form -->
+          <div class="lead-form-wrap reveal-item delay-200">
+            <h3 class="heading-small" style="margin-bottom: 0.5rem; color: var(--warm-ivory);">
+              Book a Consultation
+            </h3>
+            <p style="font-size: 0.875rem; color: var(--soft-gray); margin-bottom: 2rem;">
+              Please provide your details below and our team will get in touch shortly.
+            </p>
+
+            <form id="lead-enquiry-form" novalidate>
+              
+              <!-- Row 1: Full Name & Email -->
+              <div class="form-row-2col">
+                <div class="form-group" id="group-name">
+                  <label for="lead-name" class="form-label">
+                    Full Name <span class="req">*</span>
+                  </label>
+                  <input type="text" id="lead-name" name="name" class="form-control" placeholder="e.g. Aarav Patel" required autocomplete="name">
+                  <span class="form-error-msg">Please enter your full name (minimum 2 characters).</span>
+                </div>
+
+                <div class="form-group" id="group-email">
+                  <label for="lead-email" class="form-label">
+                    Email Address <span class="req">*</span>
+                  </label>
+                  <input type="email" id="lead-email" name="email" class="form-control" placeholder="name@example.com" required autocomplete="email">
+                  <span class="form-error-msg">Please provide a valid email address.</span>
+                </div>
+              </div>
+
+              <!-- Row 2: Phone & Project Type -->
+              <div class="form-row-2col">
+                <div class="form-group" id="group-phone">
+                  <label for="lead-phone" class="form-label">
+                    Phone Number <span class="req">*</span>
+                  </label>
+                  <input type="tel" id="lead-phone" name="phone" class="form-control" placeholder="+91 98765 43210" required autocomplete="tel">
+                  <span class="form-error-msg">Please enter a valid 10-digit Indian phone number.</span>
+                </div>
+
+                <div class="form-group" id="group-type">
+                  <label for="lead-project-type" class="form-label">
+                    Project Type <span class="req">*</span>
+                  </label>
+                  <select id="lead-project-type" name="projectType" class="form-control" required>
+                    <option value="" disabled selected>Select project type</option>
+                    <option value="Residential">Residential Interior</option>
+                    <option value="Commercial">Commercial Workspace</option>
+                    <option value="Turnkey">Complete Turnkey Project</option>
+                    <option value="Modular Kitchen">Modular Kitchen</option>
+                    <option value="Office">Office Interior</option>
+                    <option value="Other">Other / Bespoke Scope</option>
+                  </select>
+                  <span class="form-error-msg">Please select your project category.</span>
+                </div>
+              </div>
+
+              <!-- Row 3: Location & Budget -->
+              <div class="form-row-2col">
+                <div class="form-group" id="group-location">
+                  <label for="lead-location" class="form-label">
+                    Project Location in Ahmedabad <span class="req">*</span>
+                  </label>
+                  <input type="text" id="lead-location" name="location" class="form-control" placeholder="e.g. Bodakdev / Ambli / SG Highway" required>
+                  <span class="form-error-msg">Please specify the project location.</span>
+                </div>
+
+                <div class="form-group" id="group-budget">
+                  <label for="lead-budget" class="form-label">
+                    Estimated Budget
+                  </label>
+                  <select id="lead-budget" name="budget" class="form-control">
+                    <option value="" disabled selected>Select estimated budget</option>
+                    <option value="₹5–10 Lakh">₹5 – 10 Lakh</option>
+                    <option value="₹10–20 Lakh">₹10 – 20 Lakh</option>
+                    <option value="₹20–50 Lakh">₹20 – 50 Lakh</option>
+                    <option value="₹50 Lakh+">₹50 Lakh+</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Row 4: Message -->
+              <div class="form-group" id="group-message">
+                <label for="lead-message" class="form-label">
+                  Project Vision & Scope <span class="req">*</span>
+                </label>
+                <textarea id="lead-message" name="message" class="form-control" rows="4" placeholder="Briefly describe your space (e.g. 4BHK apartment under possession, looking for modern minimal aesthetics and turnkey execution)..." required></textarea>
+                <span class="form-error-msg">Please provide a message with at least 10 characters.</span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-gold form-submit-btn" id="lead-submit-btn">
+                <span class="btn-text">Request a Consultation</span>
+                <span class="btn-spinner" aria-hidden="true"></span>
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FORM SUCCESS MODAL (DEMO FEEDBACK)
+       ========================================================================== -->
+  <div class="form-modal-overlay" id="form-success-modal" role="dialog" aria-modal="true" aria-labelledby="modal-success-title" aria-hidden="true">
+    <div class="form-modal-card">
+      <div class="modal-check-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+      <h3 class="modal-title" id="modal-success-title">Thank You</h3>
+      <p class="modal-message">
+        Your consultation request has been received. Our team will get in touch with you shortly.
+      </p>
+      <button class="btn btn-gold" id="modal-close-btn" style="min-width: 180px;">Close Window</button>
+      <div class="modal-demo-note">
+        * Frontend Sales Demo: Form simulation succeeded without backend dispatch.
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       PROJECT DETAIL LIGHTBOX MODAL
+       ========================================================================== -->
+  <div class="project-modal-backdrop" id="project-lightbox-modal" role="dialog" aria-modal="true" aria-labelledby="modal-proj-title" aria-hidden="true">
+    <div class="project-modal-dialog">
+      <button class="project-modal-close-btn" id="project-modal-close" aria-label="Close project details">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      
+      <div class="modal-project-img-wrap">
+        <img src="" alt="" id="modal-proj-img">
+      </div>
+
+      <div class="modal-project-body">
+        <div>
+          <div class="modal-project-meta" id="modal-proj-meta">Residential Villa • Bodakdev, Ahmedabad</div>
+          <h3 class="modal-project-title" id="modal-proj-title">The Ahmedabad Residence</h3>
+        </div>
+
+        <div class="modal-project-details-grid">
+          <div class="modal-detail-item">
+            <span class="label">Total Built Area</span>
+            <span class="val" id="modal-proj-area">6,200 Sq.Ft.</span>
+          </div>
+          <div class="modal-detail-item">
+            <span class="label">Scope of Work</span>
+            <span class="val" id="modal-proj-scope">Turnkey & Styling</span>
+          </div>
+          <div class="modal-detail-item">
+            <span class="label">Year of Handover</span>
+            <span class="val" id="modal-proj-year">2024</span>
+          </div>
+          <div class="modal-detail-item">
+            <span class="label">Materiality</span>
+            <span class="val" id="modal-proj-materials">Travertine & Walnut</span>
+          </div>
+        </div>
+
+        <p class="modal-project-desc" id="modal-proj-desc">
+          Crafted with subtle architectural geometries and warm earthen tones, this residence balances monolithic stone surfaces with soft natural linen textures.
+        </p>
+
+        <a href="#contact" class="btn btn-gold" id="modal-book-cta" style="margin-top: 1rem;">
+          Inquire About Similar Project
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FLOATING ACTIONS (WHATSAPP & MOBILE CALL)
+       ========================================================================== -->
+  <!-- WhatsApp Floating Action -->
+  <a href="https://wa.me/919000000000?text=Hi%2C%20I'm%20interested%20in%20discussing%20an%20interior%20design%20project%20with%20Arvia%20Interiors." 
+     class="floating-whatsapp" 
+     id="whatsapp-btn" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat with Arvia Interiors on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12.031 2C6.495 2 2 6.492 2 12.028c0 1.905.534 3.738 1.547 5.334L2 22l4.805-1.508a9.99 9.99 0 0 0 5.226 1.544c5.536 0 10.031-4.492 10.031-10.028C22.062 6.492 17.567 2 12.031 2zm5.79 14.18c-.244.686-1.42 1.306-1.956 1.378-.49.066-1.127.1-3.27-.79-2.738-1.134-4.505-3.923-4.642-4.106-.135-.183-1.107-1.474-1.107-2.81 0-1.336.702-1.993.951-2.261.25-.268.544-.336.726-.336.182 0 .363.003.522.011.168.009.394-.064.616.471.228.548.777 1.896.845 2.034.068.137.114.298.023.48-.092.183-.137.297-.273.456-.137.16-.288.358-.41.48-.137.137-.28.286-.12.56.16.274.71 1.173 1.523 1.897 1.047.932 1.93 1.22 2.203 1.357.273.137.433.114.593-.069.16-.183.684-.798.867-1.072.182-.274.364-.229.615-.137.25.091 1.594.752 1.868.889.273.137.456.205.524.32.068.114.068.662-.176 1.348z"/>
+    </svg>
+    <span>Chat on WhatsApp</span>
+  </a>
+
+  <!-- Mobile Floating Call Button -->
+  <div class="mobile-quick-actions" aria-label="Mobile quick call action">
+    <a href="tel:+919000000000" class="floating-call-btn" aria-label="Call Arvia Interiors">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-top-grid">
+        
+        <!-- Brand Column -->
+        <div class="footer-brand-col">
+          <a href="#hero" class="brand-logo" aria-label="Arvia Interiors Homepage">
+            <span class="logo-main" style="font-size: 2rem;">ARVIA</span>
+            <span class="logo-sub">INTERIORS</span>
+          </a>
+          <p class="footer-tagline">
+            Spaces That Feel Like You.<br>
+            Luxury Interior Design & Turnkey Solutions in Ahmedabad, Gujarat.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="4" x2="12" y2="20"/>
+                <circle cx="12" cy="12" r="8"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Explore Links -->
+        <div>
+          <div class="footer-col-title">Explore</div>
+          <ul class="footer-nav-list">
+            <li><a href="#hero" class="footer-nav-link">Home</a></li>
+            <li><a href="#about" class="footer-nav-link">About Studio</a></li>
+            <li><a href="#projects" class="footer-nav-link">Selected Projects</a></li>
+            <li><a href="#services" class="footer-nav-link">Our Services</a></li>
+            <li><a href="#process" class="footer-nav-link">Turnkey Process</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact Studio</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Links -->
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-nav-list">
+            <li><a href="#services" class="footer-nav-link">Residential Interiors</a></li>
+            <li><a href="#services" class="footer-nav-link">Commercial Workspaces</a></li>
+            <li><a href="#services" class="footer-nav-link">Turnkey Execution</a></li>
+            <li><a href="#services" class="footer-nav-link">Modular Kitchens</a></li>
+            <li><a href="#services" class="footer-nav-link">Custom Millwork & Furniture</a></li>
+            <li><a href="#services" class="footer-nav-link">3D Spatial Visualization</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Column -->
+        <div>
+          <div class="footer-col-title">Studio</div>
+          <div class="footer-contact-details">
+            <div>
+              <strong>Arvia Interiors Studio</strong><br>
+              Sindhu Bhavan Road, Bodakdev,<br>
+              Ahmedabad, Gujarat 380054
+            </div>
+            <div>
+              <strong>Direct Phone:</strong><br>
+              <a href="tel:+919000000000">+91 90000 00000</a>
+            </div>
+            <div>
+              <strong>Email:</strong><br>
+              <a href="mailto:hello@arviainteriors.com">hello@arviainteriors.com</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>© 2026 Arvia Interiors. Demo Website for Architectural & Turnkey Contractor Presentation.</div>
+        <button class="back-to-top-btn" id="back-to-top" aria-label="Return to top of page">
+          BACK TO TOP
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M7 13V1M2 6l5-5 5 5"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       JAVASCRIPT — PRODUCTION INTERACTIONS & LOGIC
+       ========================================================================== -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* ------------------------------------------------------------------------
+         01. CONFIGURATION & CONSTANTS
+         ------------------------------------------------------------------------ */
+      const WHATSAPP_NUMBER = "919000000000"; // Easily replace with client's real number
+      const DEMO_PHONE = "+91 90000 00000";
+
+      // Project Lightbox Data
+      const PROJECT_DATA = {
+        "1": {
+          title: "The Ahmedabad Residence",
+          category: "Residential Villa • Bodakdev, Ahmedabad",
+          year: "2024",
+          area: "6,200 Sq.Ft.",
+          scope: "Full Turnkey & Custom Styling",
+          materials: "Travertine, Walnut Veneer & Brass",
+          img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85",
+          desc: "Designed for a multi-generational family in Bodakdev, this villa harmonizes expansive double-height volumes with serene travertine stone wall claddings, bespoke fluted walnut millwork, and warm diffused lighting."
+        },
+        "2": {
+          title: "The Urban Villa",
+          category: "Luxury Home • Sindhu Bhavan Rd, Ahmedabad",
+          year: "2024",
+          area: "7,800 Sq.Ft.",
+          scope: "Turnkey Architecture & Interiors",
+          materials: "Cast Concrete, Teak & Fluted Glass",
+          img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=85",
+          desc: "An urban sanctuary off Sindhu Bhavan Road emphasizing seamless transitions between landscape and living spaces. Features a sunken lounge, custom brass room partitions, and Italian marble flooring."
+        },
+        "3": {
+          title: "The Minimalist Apartment",
+          category: "Modern Living • Ambli Road, Ahmedabad",
+          year: "2023",
+          area: "3,850 Sq.Ft.",
+          scope: "Complete Interior Design & Execution",
+          materials: "Microcement, Light Oak & Linen",
+          img: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1400&q=85",
+          desc: "A masterclass in restraint and tactile calm. Inspired by Japandi principles, this Ambli Road apartment features seamless microcement finishes, bespoke oak cabinetry, and integrated acoustic ceiling baffles."
+        },
+        "4": {
+          title: "The Executive Office",
+          category: "Commercial Workspace • SG Highway, Ahmedabad",
+          year: "2024",
+          area: "9,500 Sq.Ft.",
+          scope: "Turnkey Corporate Fit-Out",
+          materials: "Acoustic Felt, Bronze & Smoked Ash",
+          img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=85",
+          desc: "A flagship corporate environment on SG Highway designed to foster collaborative focus. Includes an ergonomic executive boardroom, state-of-the-art breakout lounges, and custom acoustic privacy booths."
+        },
+        "5": {
+          title: "The Heritage Residence",
+          category: "Courtyard Restoration • Usmanpura, Ahmedabad",
+          year: "2023",
+          area: "4,600 Sq.Ft.",
+          scope: "Adaptive Restoration & Interior Craft",
+          materials: "Reclaimed Wood, Brass Inlay & Lime Plaster",
+          img: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1400&q=85",
+          desc: "Honoring Gujarat's rich architectural lineage while introducing contemporary amenities. Handcrafted traditional wooden carvings coexist with minimalist kitchen systems and an open sky courtyard."
+        },
+        "6": {
+          title: "The Modern Penthouse",
+          category: "Sky Penthouse • Prahlad Nagar, Ahmedabad",
+          year: "2024",
+          area: "5,400 Sq.Ft.",
+          scope: "Luxury Interiors & Terrace Deck",
+          materials: "Nero Marquina, Brushed Gold & Velvet",
+          img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85",
+          desc: "Commanding 360-degree views of the Ahmedabad skyline, this penthouse features a double-height living pavilion, a climate-controlled walk-in wine room, and an expansive private terrace garden."
+        }
+      };
+
+      /* ------------------------------------------------------------------------
+         02. PAGE LOADER
+         ------------------------------------------------------------------------ */
+      const pageLoader = document.getElementById('page-loader');
+      function dismissLoader() {
+        if (pageLoader) {
+          pageLoader.classList.add('loaded');
+          setTimeout(() => {
+            pageLoader.remove();
+          }, 700);
+        }
+      }
+      window.addEventListener('load', () => {
+        setTimeout(dismissLoader, 650);
+      });
+      // Safety fallback in case network hangs on external fonts
+      setTimeout(dismissLoader, 1800);
+
+      /* ------------------------------------------------------------------------
+         03. SCROLL PROGRESS BAR
+         ------------------------------------------------------------------------ */
+      const scrollProgressBar = document.getElementById('scroll-progress-bar');
+      function updateScrollProgress() {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        if (scrollProgressBar) {
+          scrollProgressBar.style.width = progress + '%';
+          scrollProgressBar.setAttribute('aria-valuenow', Math.round(progress));
+        }
+      }
+      window.addEventListener('scroll', updateScrollProgress, { passive: true });
+
+      /* ------------------------------------------------------------------------
+         04. CUSTOM CURSOR (DESKTOP ONLY)
+         ------------------------------------------------------------------------ */
+      const cursorDot = document.getElementById('cursor-dot');
+      const cursorRing = document.getElementById('cursor-ring');
+      let mouseX = window.innerWidth / 2;
+      let mouseY = window.innerHeight / 2;
+      let ringX = mouseX;
+      let ringY = mouseY;
+      let isCursorActive = false;
+
+      // Only enable cursor on devices that support hover / fine pointers
+      const supportsFinePointer = window.matchMedia('(pointer: fine)').matches;
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      if (supportsFinePointer && !prefersReducedMotion && cursorDot && cursorRing) {
+        document.addEventListener('mousemove', (e) => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+          if (!isCursorActive) {
+            cursorDot.style.opacity = '1';
+            cursorRing.style.opacity = '1';
+            isCursorActive = true;
+          }
+          cursorDot.style.transform = `translate(${mouseX - 3}px, ${mouseY - 3}px)`;
+        });
+
+        // Smooth cursor lerp animation loop
+        function renderCursor() {
+          ringX += (mouseX - ringX) * 0.18;
+          ringY += (mouseY - ringY) * 0.18;
+          cursorRing.style.transform = `translate(${ringX}px, ${ringY}px) translate(-50%, -50%)`;
+          requestAnimationFrame(renderCursor);
+        }
+        requestAnimationFrame(renderCursor);
+
+        // Hover expansions for links and buttons
+        const interactiveElements = document.querySelectorAll('a, button, input, select, textarea, [data-cursor]');
+        interactiveElements.forEach((el) => {
+          el.addEventListener('mouseenter', () => {
+            const cursorAttr = el.getAttribute('data-cursor');
+            if (cursorAttr === 'VIEW') {
+              cursorRing.classList.add('cursor-view');
+              cursorRing.textContent = 'VIEW';
+            } else {
+              cursorRing.classList.add('cursor-hover');
+              cursorRing.textContent = '';
+            }
+          });
+          el.addEventListener('mouseleave', () => {
+            cursorRing.classList.remove('cursor-hover', 'cursor-view');
+            cursorRing.textContent = '';
+          });
+        });
+
+        document.addEventListener('mouseleave', () => {
+          cursorDot.style.opacity = '0';
+          cursorRing.style.opacity = '0';
+          isCursorActive = false;
+        });
+      }
+
+      /* ------------------------------------------------------------------------
+         05. STICKY NAVBAR & ACTIVE LINK HIGHLIGHTING
+         ------------------------------------------------------------------------ */
+      const headerNav = document.getElementById('main-header');
+      const navLinks = document.querySelectorAll('.nav-menu-desktop .nav-link');
+      const sections = document.querySelectorAll('main section[id]');
+
+      function handleNavbarScroll() {
+        const scrollY = window.scrollY;
+        if (scrollY > 60) {
+          headerNav.classList.add('scrolled');
+        } else {
+          headerNav.classList.remove('scrolled');
+        }
+
+        // Active section spy
+        let currentSectionId = '';
+        sections.forEach((sec) => {
+          const sectionTop = sec.offsetTop - 140;
+          const sectionHeight = sec.offsetHeight;
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            currentSectionId = sec.getAttribute('id');
+          }
+        });
+
+        if (currentSectionId) {
+          navLinks.forEach((link) => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${currentSectionId}`) {
+              link.classList.add('active');
+            }
+          });
+        }
+      }
+      window.addEventListener('scroll', handleNavbarScroll, { passive: true });
+
+      /* ------------------------------------------------------------------------
+         06. MOBILE MENU (FULLSCREEN MODAL & SCROLL LOCK)
+         ------------------------------------------------------------------------ */
+      const mobileToggle = document.getElementById('mobile-toggle');
+      const mobileNav = document.getElementById('mobile-nav');
+      const mobileLinks = document.querySelectorAll('.mobile-nav-item');
+
+      function openMobileMenu() {
+        mobileToggle.classList.add('is-active');
+        mobileToggle.setAttribute('aria-expanded', 'true');
+        mobileNav.classList.add('is-open');
+        mobileNav.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('scroll-locked');
+      }
+
+      function closeMobileMenu() {
+        mobileToggle.classList.remove('is-active');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+        mobileNav.classList.remove('is-open');
+        mobileNav.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('scroll-locked');
+      }
+
+      if (mobileToggle) {
+        mobileToggle.addEventListener('click', () => {
+          if (mobileNav.classList.contains('is-open')) {
+            closeMobileMenu();
+          } else {
+            openMobileMenu();
+          }
+        });
+      }
+
+      mobileLinks.forEach((link) => {
+        link.addEventListener('click', closeMobileMenu);
+      });
+
+      window.closeMobileMenu = closeMobileMenu;
+
+      /* ------------------------------------------------------------------------
+         07. STATS NUMBER COUNT-UP ANIMATION
+         ------------------------------------------------------------------------ */
+      const statCounters = document.querySelectorAll('.stat-counter');
+      let statsAnimated = false;
+
+      function animateCounters() {
+        statCounters.forEach((counter) => {
+          const target = parseInt(counter.getAttribute('data-target'), 10);
+          const duration = 1600;
+          const startTime = performance.now();
+
+          function updateNumber(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            // Ease out cubic
+            const easeOutProgress = 1 - Math.pow(1 - progress, 3);
+            const currentVal = Math.floor(easeOutProgress * target);
+            counter.textContent = currentVal;
+            if (progress < 1) {
+              requestAnimationFrame(updateNumber);
+            } else {
+              counter.textContent = target;
+            }
+          }
+          requestAnimationFrame(updateNumber);
+        });
+      }
+
+      const statsSection = document.getElementById('stats-section');
+      if (statsSection) {
+        const statsObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && !statsAnimated) {
+              statsAnimated = true;
+              animateCounters();
+            }
+          });
+        }, { threshold: 0.35 });
+        statsObserver.observe(statsSection);
+      }
+
+      /* ------------------------------------------------------------------------
+         08. FEATURED PROJECTS CAROUSEL (DRAG, TOUCH, AUTOPLAY & CONTROLS)
+         ------------------------------------------------------------------------ */
+      const track = document.getElementById('project-track');
+      const prevBtn = document.getElementById('project-prev-btn');
+      const nextBtn = document.getElementById('project-next-btn');
+      const currentSlideNum = document.getElementById('current-slide-num');
+      const carouselProgressFill = document.getElementById('carousel-progress-fill');
+      const projectCards = document.querySelectorAll('.project-card');
+      const totalProjects = projectCards.length;
+
+      let isDown = false;
+      let startX = 0;
+      let scrollLeft = 0;
+      let autoplayTimer = null;
+      const AUTOPLAY_INTERVAL = 4500;
+
+      function updateCarouselProgress() {
+        if (!track) return;
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        const currentScroll = track.scrollLeft;
+        const scrollFraction = maxScroll > 0 ? currentScroll / maxScroll : 0;
+        
+        // Calculate closest card index
+        let closestIndex = 0;
+        let minDiff = Infinity;
+        projectCards.forEach((card, idx) => {
+          const cardOffset = card.offsetLeft - track.offsetLeft;
+          const diff = Math.abs(cardOffset - currentScroll);
+          if (diff < minDiff) {
+            minDiff = diff;
+            closestIndex = idx;
+          }
+        });
+
+        if (currentSlideNum) {
+          currentSlideNum.textContent = String(closestIndex + 1).padStart(2, '0');
+        }
+
+        if (carouselProgressFill) {
+          const fillWidth = 100 / totalProjects;
+          const fillLeft = scrollFraction * (100 - fillWidth);
+          carouselProgressFill.style.width = fillWidth + '%';
+          carouselProgressFill.style.left = fillLeft + '%';
+        }
+      }
+
+      function scrollCarousel(direction) {
+        if (!track) return;
+        const cardWidth = projectCards[0].offsetWidth + 28; // width + gap
+        track.scrollBy({
+          left: direction * cardWidth,
+          behavior: 'smooth'
+        });
+      }
+
+      if (prevBtn) prevBtn.addEventListener('click', () => scrollCarousel(-1));
+      if (nextBtn) nextBtn.addEventListener('click', () => scrollCarousel(1));
+
+      if (track) {
+        track.addEventListener('scroll', updateCarouselProgress, { passive: true });
+
+        // Mouse Drag Support
+        track.addEventListener('mousedown', (e) => {
+          isDown = true;
+          track.classList.add('active');
+          startX = e.pageX - track.offsetLeft;
+          scrollLeft = track.scrollLeft;
+          stopAutoplay();
+        });
+
+        window.addEventListener('mouseup', () => {
+          if (isDown) {
+            isDown = false;
+            startAutoplay();
+          }
+        });
+
+        track.addEventListener('mousemove', (e) => {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.pageX - track.offsetLeft;
+          const walk = (x - startX) * 1.5;
+          track.scrollLeft = scrollLeft - walk;
+        });
+
+        // Keyboard navigation
+        track.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowRight') {
+            scrollCarousel(1);
+          } else if (e.key === 'ArrowLeft') {
+            scrollCarousel(-1);
+          }
+        });
+
+        // Autoplay Logic
+        function startAutoplay() {
+          stopAutoplay();
+          autoplayTimer = setInterval(() => {
+            const maxScroll = track.scrollWidth - track.clientWidth - 10;
+            if (track.scrollLeft >= maxScroll) {
+              track.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+              scrollCarousel(1);
+            }
+          }, AUTOPLAY_INTERVAL);
+        }
+
+        function stopAutoplay() {
+          if (autoplayTimer) {
+            clearInterval(autoplayTimer);
+            autoplayTimer = null;
+          }
+        }
+
+        track.addEventListener('mouseenter', stopAutoplay);
+        track.addEventListener('mouseleave', startAutoplay);
+        track.addEventListener('touchstart', stopAutoplay, { passive: true });
+        track.addEventListener('touchend', startAutoplay, { passive: true });
+
+        startAutoplay();
+      }
+
+      /* ------------------------------------------------------------------------
+         09. PROJECT DETAIL LIGHTBOX MODAL
+         ------------------------------------------------------------------------ */
+      const projectModal = document.getElementById('project-lightbox-modal');
+      const projectModalClose = document.getElementById('project-modal-close');
+      const modalProjImg = document.getElementById('modal-proj-img');
+      const modalProjTitle = document.getElementById('modal-proj-title');
+      const modalProjMeta = document.getElementById('modal-proj-meta');
+      const modalProjArea = document.getElementById('modal-proj-area');
+      const modalProjScope = document.getElementById('modal-proj-scope');
+      const modalProjYear = document.getElementById('modal-proj-year');
+      const modalProjMaterials = document.getElementById('modal-proj-materials');
+      const modalProjDesc = document.getElementById('modal-proj-desc');
+      const modalBookCta = document.getElementById('modal-book-cta');
+
+      function openProjectModal(id) {
+        const data = PROJECT_DATA[id];
+        if (!data || !projectModal) return;
+
+        modalProjImg.src = data.img;
+        modalProjImg.alt = data.title;
+        modalProjTitle.textContent = data.title;
+        modalProjMeta.textContent = data.category;
+        modalProjArea.textContent = data.area;
+        modalProjScope.textContent = data.scope;
+        modalProjYear.textContent = data.year;
+        modalProjMaterials.textContent = data.materials;
+        modalProjDesc.textContent = data.desc;
+
+        projectModal.classList.add('is-open');
+        projectModal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('scroll-locked');
+      }
+
+      function closeProjectModal() {
+        if (!projectModal) return;
+        projectModal.classList.remove('is-open');
+        projectModal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('scroll-locked');
+      }
+
+      projectCards.forEach((card) => {
+        card.addEventListener('click', (e) => {
+          // Prevent click trigger during mouse drag
+          if (isDown) return;
+          const id = card.getAttribute('data-project-id');
+          openProjectModal(id);
+        });
+      });
+
+      if (projectModalClose) {
+        projectModalClose.addEventListener('click', closeProjectModal);
+      }
+
+      if (projectModal) {
+        projectModal.addEventListener('click', (e) => {
+          if (e.target === projectModal) {
+            closeProjectModal();
+          }
+        });
+      }
+
+      if (modalBookCta) {
+        modalBookCta.addEventListener('click', closeProjectModal);
+      }
+
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && projectModal && projectModal.classList.contains('is-open')) {
+          closeProjectModal();
+        }
+      });
+
+      /* ------------------------------------------------------------------------
+         10. SERVICES HOVER IMAGE REVEAL (DESKTOP)
+         ------------------------------------------------------------------------ */
+      const servicePreview = document.getElementById('service-preview');
+      const servicePreviewImg = document.getElementById('service-preview-img');
+      const serviceItems = document.querySelectorAll('.service-item');
+
+      if (supportsFinePointer && servicePreview && servicePreviewImg) {
+        serviceItems.forEach((item) => {
+          item.addEventListener('mouseenter', (e) => {
+            const imgSrc = item.getAttribute('data-preview');
+            const title = item.getAttribute('data-title');
+            servicePreviewImg.src = imgSrc;
+            servicePreviewImg.alt = title;
+            servicePreview.classList.add('active');
+          });
+
+          item.addEventListener('mousemove', (e) => {
+            servicePreview.style.left = e.clientX + 'px';
+            servicePreview.style.top = e.clientY + 'px';
+          });
+
+          item.addEventListener('mouseleave', () => {
+            servicePreview.classList.remove('active');
+          });
+        });
+      }
+
+      /* ------------------------------------------------------------------------
+         11. TURNKEY PROCESS TIMELINE PROGRESS
+         ------------------------------------------------------------------------ */
+      const processSection = document.getElementById('process');
+      const processProgressBar = document.getElementById('process-progress-bar');
+      const processSteps = document.querySelectorAll('.process-step-card');
+
+      if (processSection && processProgressBar) {
+        const processObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              if (window.innerWidth >= 1024) {
+                processProgressBar.style.width = '100%';
+              } else {
+                processProgressBar.style.height = '100%';
+              }
+              processSteps.forEach((step, idx) => {
+                setTimeout(() => {
+                  step.classList.add('is-active');
+                }, idx * 180);
+              });
+            }
+          });
+        }, { threshold: 0.25 });
+        processObserver.observe(processSection);
+      }
+
+      /* ------------------------------------------------------------------------
+         12. TESTIMONIALS CAROUSEL
+         ------------------------------------------------------------------------ */
+      const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+      const testDots = document.querySelectorAll('.test-dot');
+      const testPrevBtn = document.getElementById('test-prev-btn');
+      const testNextBtn = document.getElementById('test-next-btn');
+      let currentTestIndex = 0;
+      let testimonialAutoplay = null;
+
+      function showTestimonial(index) {
+        if (index < 0) index = testimonialSlides.length - 1;
+        if (index >= testimonialSlides.length) index = 0;
+        currentTestIndex = index;
+
+        testimonialSlides.forEach((slide, idx) => {
+          slide.classList.toggle('active', idx === currentTestIndex);
+        });
+
+        testDots.forEach((dot, idx) => {
+          dot.classList.toggle('active', idx === currentTestIndex);
+        });
+      }
+
+      if (testPrevBtn) {
+        testPrevBtn.addEventListener('click', () => {
+          showTestimonial(currentTestIndex - 1);
+          resetTestimonialTimer();
+        });
+      }
+
+      if (testNextBtn) {
+        testNextBtn.addEventListener('click', () => {
+          showTestimonial(currentTestIndex + 1);
+          resetTestimonialTimer();
+        });
+      }
+
+      testDots.forEach((dot) => {
+        dot.addEventListener('click', () => {
+          const slideIdx = parseInt(dot.getAttribute('data-slide'), 10);
+          showTestimonial(slideIdx);
+          resetTestimonialTimer();
+        });
+      });
+
+      function startTestimonialTimer() {
+        testimonialAutoplay = setInterval(() => {
+          showTestimonial(currentTestIndex + 1);
+        }, 5500);
+      }
+
+      function resetTestimonialTimer() {
+        if (testimonialAutoplay) clearInterval(testimonialAutoplay);
+        startTestimonialTimer();
+      }
+
+      startTestimonialTimer();
+
+      /* ------------------------------------------------------------------------
+         13. FAQ ACCORDION
+         ------------------------------------------------------------------------ */
+      const accordionTriggers = document.querySelectorAll('.accordion-trigger');
+
+      accordionTriggers.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+          const panelId = btn.getAttribute('aria-controls');
+          const targetPanel = document.getElementById(panelId);
+
+          // Close all other panels (single item open)
+          accordionTriggers.forEach((otherBtn) => {
+            if (otherBtn !== btn) {
+              otherBtn.setAttribute('aria-expanded', 'false');
+              const otherPanel = document.getElementById(otherBtn.getAttribute('aria-controls'));
+              if (otherPanel) {
+                otherPanel.style.maxHeight = null;
+                otherPanel.classList.remove('is-open');
+              }
+            }
+          });
+
+          // Toggle current
+          if (isExpanded) {
+            btn.setAttribute('aria-expanded', 'false');
+            if (targetPanel) {
+              targetPanel.style.maxHeight = null;
+              targetPanel.classList.remove('is-open');
+            }
+          } else {
+            btn.setAttribute('aria-expanded', 'true');
+            if (targetPanel) {
+              targetPanel.classList.add('is-open');
+              targetPanel.style.maxHeight = targetPanel.scrollHeight + 'px';
+            }
+          }
+        });
+      });
+
+      /* ------------------------------------------------------------------------
+         14. CONTACT / LEAD FORM VALIDATION & MODAL
+         ------------------------------------------------------------------------ */
+      const leadForm = document.getElementById('lead-enquiry-form');
+      const submitBtn = document.getElementById('lead-submit-btn');
+      const successModal = document.getElementById('form-success-modal');
+      const modalCloseBtn = document.getElementById('modal-close-btn');
+
+      // Validation Rules
+      function validateField(input) {
+        const group = input.closest('.form-group');
+        if (!group) return true;
+
+        const val = input.value.trim();
+        let isValid = true;
+
+        if (input.id === 'lead-name') {
+          isValid = val.length >= 2;
+        } else if (input.id === 'lead-email') {
+          // Standard RFC 5322 regex pattern
+          const emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$/;
+          isValid = emailPattern.test(val);
+        } else if (input.id === 'lead-phone') {
+          // Accepts Indian phone numbers: optional +91, 10 digits starting with 6-9
+          const cleanPhone = val.replace(/[\s\-]/g, '');
+          const phonePattern = /^(\+91)?[6-9]\d{9}$/;
+          isValid = phonePattern.test(cleanPhone);
+        } else if (input.id === 'lead-project-type') {
+          isValid = val !== '';
+        } else if (input.id === 'lead-location') {
+          isValid = val.length >= 2;
+        } else if (input.id === 'lead-message') {
+          isValid = val.length >= 10;
+        }
+
+        if (!isValid) {
+          group.classList.add('has-error');
+          group.classList.remove('has-success');
+        } else {
+          group.classList.remove('has-error');
+          group.classList.add('has-success');
+        }
+
+        return isValid;
+      }
+
+      // Attach blur & input listeners for immediate, polite feedback
+      if (leadForm) {
+        const requiredInputs = leadForm.querySelectorAll('input[required], select[required], textarea[required]');
+        requiredInputs.forEach((input) => {
+          input.addEventListener('blur', () => validateField(input));
+          input.addEventListener('input', () => {
+            if (input.closest('.form-group').classList.contains('has-error')) {
+              validateField(input);
+            }
+          });
+        });
+
+        leadForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          let formIsValid = true;
+          requiredInputs.forEach((input) => {
+            const fieldValid = validateField(input);
+            if (!fieldValid) formIsValid = false;
+          });
+
+          if (!formIsValid) {
+            // Focus on first invalid field
+            const firstError = leadForm.querySelector('.form-group.has-error input, .form-group.has-error select, .form-group.has-error textarea');
+            if (firstError) firstError.focus();
+            return;
+          }
+
+          // Show loading state
+          submitBtn.classList.add('is-loading');
+          submitBtn.disabled = true;
+
+          // Simulate brief network submission for demo
+          setTimeout(() => {
+            submitBtn.classList.remove('is-loading');
+            submitBtn.disabled = false;
+            leadForm.reset();
+
+            // Clear visual success states
+            leadForm.querySelectorAll('.form-group').forEach((group) => {
+              group.classList.remove('has-success', 'has-error');
+            });
+
+            // Show success modal
+            if (successModal) {
+              successModal.classList.add('is-visible');
+              successModal.setAttribute('aria-hidden', 'false');
+              document.body.classList.add('scroll-locked');
+            }
+          }, 1100);
+        });
+      }
+
+      if (modalCloseBtn && successModal) {
+        modalCloseBtn.addEventListener('click', () => {
+          successModal.classList.remove('is-visible');
+          successModal.setAttribute('aria-hidden', 'true');
+          document.body.classList.remove('scroll-locked');
+        });
+
+        successModal.addEventListener('click', (e) => {
+          if (e.target === successModal) {
+            successModal.classList.remove('is-visible');
+            successModal.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('scroll-locked');
+          }
+        });
+      }
+
+      /* ------------------------------------------------------------------------
+         15. BACK TO TOP BUTTON
+         ------------------------------------------------------------------------ */
+      const backToTopBtn = document.getElementById('back-to-top');
+      if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      /* ------------------------------------------------------------------------
+         16. SCROLL REVEAL (INTERSECTION OBSERVER)
+         ------------------------------------------------------------------------ */
+      const revealItems = document.querySelectorAll('.reveal-item');
+      if ('IntersectionObserver' in window && !prefersReducedMotion) {
+        const revealObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-revealed');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.12,
+          rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealItems.forEach((el) => revealObserver.observe(el));
+      } else {
+        // Fallback for older browsers or reduced motion
+        revealItems.forEach((el) => el.classList.add('is-revealed'));
+      }
+
+    })();
+  </script>
+</body>
+</html>
